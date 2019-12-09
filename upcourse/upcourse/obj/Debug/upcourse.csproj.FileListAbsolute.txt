@@ -53,3 +53,17 @@ C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\obj\D
 C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.csproj.CopyComplete
 C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.exe
 C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.pdb
+C:\Users\ak417\Downloads\My-Github\Course-management-system\upcourse\upcourse\bin\Debug\upcourse.exe.config
+C:\Users\ak417\Downloads\My-Github\Course-management-system\upcourse\upcourse\bin\Debug\upcourse.exe
+C:\Users\ak417\Downloads\My-Github\Course-management-system\upcourse\upcourse\bin\Debug\upcourse.pdb
+C:\Users\ak417\Downloads\My-Github\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.csprojAssemblyReference.cache
+C:\Users\ak417\Downloads\My-Github\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.Form1.resources
+C:\Users\ak417\Downloads\My-Github\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.mainscreen.resources
+C:\Users\ak417\Downloads\My-Github\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.Properties.Resources.resources
+C:\Users\ak417\Downloads\My-Github\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.register.resources
+C:\Users\ak417\Downloads\My-Github\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.register2.resources
+C:\Users\ak417\Downloads\My-Github\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.register3.resources
+C:\Users\ak417\Downloads\My-Github\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.csproj.GenerateResource.cache
+C:\Users\ak417\Downloads\My-Github\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.csproj.CopyComplete
+C:\Users\ak417\Downloads\My-Github\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.exe
+C:\Users\ak417\Downloads\My-Github\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.pdb

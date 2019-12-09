@@ -13,7 +13,9 @@ namespace upcourse
 {
     public partial class mainscreen : UserControl
     {
-
+        static string databaseString = "Data Source=DESKTOP-6GK3Q7F\\SQLEXPRESS;Initial Catalog='Course Mangment System';Integrated Security=True";
+       
+       static SqlConnection dbconnection = new SqlConnection(databaseString);
         public mainscreen()
         {
             InitializeComponent();
@@ -39,8 +41,7 @@ namespace upcourse
             {
 
                 // modify it to your server and db name
-                string databaseString = "Server=localhost;Database=Up Course;Trusted_Connection=True;";
-                SqlConnection dbconnection = new SqlConnection(databaseString);
+               
                 dbconnection.Open();
             
                 string checkCredentials = "Select * from Trainee Where UserName = '" + mainScreen_username.Text + "' and Password = '" + mainScreen_password.Text.Trim() + "'";

@@ -39,6 +39,10 @@
             this.register2_qual = new System.Windows.Forms.TextBox();
             this.register_RB_trainee = new System.Windows.Forms.RadioButton();
             this.register_RB_trainer = new System.Windows.Forms.RadioButton();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // register2_backBtn
@@ -46,7 +50,7 @@
             this.register2_backBtn.AutoSize = true;
             this.register2_backBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.register2_backBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.register2_backBtn.Location = new System.Drawing.Point(10, 425);
+            this.register2_backBtn.Location = new System.Drawing.Point(9, 425);
             this.register2_backBtn.Name = "register2_backBtn";
             this.register2_backBtn.Size = new System.Drawing.Size(73, 24);
             this.register2_backBtn.TabIndex = 27;
@@ -60,9 +64,9 @@
             this.register2_loginBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.register2_loginBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.register2_loginBtn.ForeColor = System.Drawing.Color.White;
-            this.register2_loginBtn.Location = new System.Drawing.Point(138, 400);
+            this.register2_loginBtn.Location = new System.Drawing.Point(121, 400);
             this.register2_loginBtn.Name = "register2_loginBtn";
-            this.register2_loginBtn.Size = new System.Drawing.Size(157, 49);
+            this.register2_loginBtn.Size = new System.Drawing.Size(137, 49);
             this.register2_loginBtn.TabIndex = 26;
             this.register2_loginBtn.Text = "Next";
             this.register2_loginBtn.UseVisualStyleBackColor = false;
@@ -73,7 +77,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(51)))), ((int)(((byte)(206)))));
-            this.label6.Location = new System.Drawing.Point(19, 14);
+            this.label6.Location = new System.Drawing.Point(17, 14);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(175, 30);
             this.label6.TabIndex = 24;
@@ -85,7 +89,7 @@
             this.register2_male.AutoSize = true;
             this.register2_male.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.register2_male.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(51)))), ((int)(((byte)(206)))));
-            this.register2_male.Location = new System.Drawing.Point(24, 65);
+            this.register2_male.Location = new System.Drawing.Point(170, 25);
             this.register2_male.Name = "register2_male";
             this.register2_male.Size = new System.Drawing.Size(76, 28);
             this.register2_male.TabIndex = 28;
@@ -98,7 +102,7 @@
             this.register2_female.AutoSize = true;
             this.register2_female.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.register2_female.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(51)))), ((int)(((byte)(206)))));
-            this.register2_female.Location = new System.Drawing.Point(159, 65);
+            this.register2_female.Location = new System.Drawing.Point(32, 25);
             this.register2_female.Name = "register2_female";
             this.register2_female.Size = new System.Drawing.Size(101, 28);
             this.register2_female.TabIndex = 29;
@@ -109,9 +113,9 @@
             // 
             // register2_date
             // 
-            this.register2_date.Location = new System.Drawing.Point(200, 19);
+            this.register2_date.Location = new System.Drawing.Point(175, 19);
             this.register2_date.Name = "register2_date";
-            this.register2_date.Size = new System.Drawing.Size(232, 22);
+            this.register2_date.Size = new System.Drawing.Size(204, 24);
             this.register2_date.TabIndex = 30;
             // 
             // label1
@@ -119,7 +123,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(51)))), ((int)(((byte)(206)))));
-            this.label1.Location = new System.Drawing.Point(19, 276);
+            this.label1.Location = new System.Drawing.Point(17, 276);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(215, 30);
             this.label1.TabIndex = 31;
@@ -130,7 +134,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(51)))), ((int)(((byte)(206)))));
-            this.label2.Location = new System.Drawing.Point(19, 124);
+            this.label2.Location = new System.Drawing.Point(17, 124);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(182, 30);
             this.label2.TabIndex = 32;
@@ -139,10 +143,10 @@
             // 
             // register2_qual
             // 
-            this.register2_qual.Location = new System.Drawing.Point(14, 173);
+            this.register2_qual.Location = new System.Drawing.Point(12, 173);
             this.register2_qual.Multiline = true;
             this.register2_qual.Name = "register2_qual";
-            this.register2_qual.Size = new System.Drawing.Size(374, 81);
+            this.register2_qual.Size = new System.Drawing.Size(328, 81);
             this.register2_qual.TabIndex = 33;
             // 
             // register_RB_trainee
@@ -150,7 +154,7 @@
             this.register_RB_trainee.AutoSize = true;
             this.register_RB_trainee.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.register_RB_trainee.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(51)))), ((int)(((byte)(206)))));
-            this.register_RB_trainee.Location = new System.Drawing.Point(170, 329);
+            this.register_RB_trainee.Location = new System.Drawing.Point(30, 22);
             this.register_RB_trainee.Name = "register_RB_trainee";
             this.register_RB_trainee.Size = new System.Drawing.Size(103, 28);
             this.register_RB_trainee.TabIndex = 35;
@@ -163,7 +167,7 @@
             this.register_RB_trainer.AutoSize = true;
             this.register_RB_trainer.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.register_RB_trainer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(51)))), ((int)(((byte)(206)))));
-            this.register_RB_trainer.Location = new System.Drawing.Point(24, 329);
+            this.register_RB_trainer.Location = new System.Drawing.Point(139, 22);
             this.register_RB_trainer.Name = "register_RB_trainer";
             this.register_RB_trainer.Size = new System.Drawing.Size(98, 28);
             this.register_RB_trainer.TabIndex = 34;
@@ -172,25 +176,46 @@
             this.register_RB_trainer.UseVisualStyleBackColor = true;
             this.register_RB_trainer.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.register2_female);
+            this.panel1.Controls.Add(this.register2_male);
+            this.panel1.Location = new System.Drawing.Point(12, 49);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(266, 72);
+            this.panel1.TabIndex = 36;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.register_RB_trainee);
+            this.panel2.Controls.Add(this.register_RB_trainer);
+            this.panel2.Location = new System.Drawing.Point(12, 309);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(266, 65);
+            this.panel2.TabIndex = 37;
+            // 
             // register2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.register_RB_trainee);
-            this.Controls.Add(this.register_RB_trainer);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.register2_qual);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.register2_date);
-            this.Controls.Add(this.register2_female);
-            this.Controls.Add(this.register2_male);
             this.Controls.Add(this.register2_backBtn);
             this.Controls.Add(this.register2_loginBtn);
             this.Controls.Add(this.label6);
             this.Name = "register2";
-            this.Size = new System.Drawing.Size(466, 462);
+            this.Size = new System.Drawing.Size(408, 462);
             this.Load += new System.EventHandler(this.register2_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -209,5 +234,7 @@
         private System.Windows.Forms.TextBox register2_qual;
         private System.Windows.Forms.RadioButton register_RB_trainee;
         private System.Windows.Forms.RadioButton register_RB_trainer;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
     }
 }
