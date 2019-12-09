@@ -1,0 +1,55 @@
+C:\Users\shehab55\Desktop\up course\upcourse\upcourse\bin\Debug\upcourse.exe.config
+C:\Users\shehab55\Desktop\up course\upcourse\upcourse\bin\Debug\upcourse.exe
+C:\Users\shehab55\Desktop\up course\upcourse\upcourse\bin\Debug\upcourse.pdb
+C:\Users\shehab55\Desktop\up course\upcourse\upcourse\obj\Debug\upcourse.csprojAssemblyReference.cache
+C:\Users\shehab55\Desktop\up course\upcourse\upcourse\obj\Debug\upcourse.Properties.Resources.resources
+C:\Users\shehab55\Desktop\up course\upcourse\upcourse\obj\Debug\upcourse.csproj.GenerateResource.cache
+C:\Users\shehab55\Desktop\up course\upcourse\upcourse\obj\Debug\upcourse.csproj.CoreCompileInputs.cache
+C:\Users\shehab55\Desktop\up course\upcourse\upcourse\obj\Debug\upcourse.exe
+C:\Users\shehab55\Desktop\up course\upcourse\upcourse\obj\Debug\upcourse.pdb
+C:\Users\shehab55\Desktop\up course\upcourse\upcourse\obj\Debug\upcourse.Form1.resources
+C:\Users\shehab55\Desktop\up course\upcourse\upcourse\obj\Debug\upcourse.register.resources
+C:\Users\shehab55\Desktop\up course\upcourse\upcourse\obj\Debug\upcourse.register2.resources
+C:\Users\shehab55\Desktop\up course\upcourse\upcourse\obj\Debug\upcourse.register3.resources
+C:\Users\shehab55\Desktop\up course\upcourse\upcourse\obj\Debug\upcourse.mainscreen.resources
+C:\Users\IBRA3Z\Desktop\Repo.s\upcourse\upcourse\bin\Debug\upcourse.exe.config
+C:\Users\IBRA3Z\Desktop\Repo.s\upcourse\upcourse\bin\Debug\upcourse.exe
+C:\Users\IBRA3Z\Desktop\Repo.s\upcourse\upcourse\bin\Debug\upcourse.pdb
+C:\Users\IBRA3Z\Desktop\Repo.s\upcourse\upcourse\obj\Debug\upcourse.Form1.resources
+C:\Users\IBRA3Z\Desktop\Repo.s\upcourse\upcourse\obj\Debug\upcourse.mainscreen.resources
+C:\Users\IBRA3Z\Desktop\Repo.s\upcourse\upcourse\obj\Debug\upcourse.Properties.Resources.resources
+C:\Users\IBRA3Z\Desktop\Repo.s\upcourse\upcourse\obj\Debug\upcourse.register.resources
+C:\Users\IBRA3Z\Desktop\Repo.s\upcourse\upcourse\obj\Debug\upcourse.register2.resources
+C:\Users\IBRA3Z\Desktop\Repo.s\upcourse\upcourse\obj\Debug\upcourse.register3.resources
+C:\Users\IBRA3Z\Desktop\Repo.s\upcourse\upcourse\obj\Debug\upcourse.csproj.GenerateResource.cache
+C:\Users\IBRA3Z\Desktop\Repo.s\upcourse\upcourse\obj\Debug\upcourse.exe
+C:\Users\IBRA3Z\Desktop\Repo.s\upcourse\upcourse\obj\Debug\upcourse.pdb
+F:\Up Course\Course-management-system\upcourse\upcourse\bin\Debug\upcourse.exe.config
+F:\Up Course\Course-management-system\upcourse\upcourse\bin\Debug\upcourse.exe
+F:\Up Course\Course-management-system\upcourse\upcourse\bin\Debug\upcourse.pdb
+F:\Up Course\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.csprojAssemblyReference.cache
+F:\Up Course\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.Form1.resources
+F:\Up Course\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.mainscreen.resources
+F:\Up Course\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.Properties.Resources.resources
+F:\Up Course\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.register.resources
+F:\Up Course\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.register2.resources
+F:\Up Course\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.register3.resources
+F:\Up Course\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.csproj.GenerateResource.cache
+F:\Up Course\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.csproj.CoreCompileInputs.cache
+F:\Up Course\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.exe
+F:\Up Course\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.pdb
+F:\Up Course\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.csproj.CopyComplete
+C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\bin\Debug\upcourse.exe.config
+C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\bin\Debug\upcourse.exe
+C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\bin\Debug\upcourse.pdb
+C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.csprojAssemblyReference.cache
+C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.Form1.resources
+C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.mainscreen.resources
+C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.Properties.Resources.resources
+C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.register.resources
+C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.register2.resources
+C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.register3.resources
+C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.csproj.GenerateResource.cache
+C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.csproj.CopyComplete
+C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.exe
+C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.pdb
