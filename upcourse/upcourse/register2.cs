@@ -12,22 +12,14 @@ namespace upcourse
 {
     public partial class register2 : UserControl
     {
-        string FirstName, LastName, UserName, Email, Number, ID;
+        static string Gender;
+        static string qualf;
+        static string CurrentPos;
         public register2()
         {
             InitializeComponent();
         }
-        public register2(string firstName,string lastName,string userName,string email,string number,string iD)
-        {
-            InitializeComponent();
-            this.FirstName = firstName;
-            this.LastName = lastName;
-            this.UserName = userName;
-            this.Email = email;
-            this.Number = number;
-            this.ID = iD;
-
-        }
+        
 
         private void label6_Click(object sender, EventArgs e)
         {
@@ -38,32 +30,42 @@ namespace upcourse
         {
             this.Hide();
         }
-
+        public static string GetQualf()
+        {
+            return qualf;
+        }
+        public static string GetGender()
+        {
+            return Gender;
+        }
+        public static string GetCurrentPos()
+        {
+            return CurrentPos;
+        }
         private void register2_loginBtn_Click(object sender, EventArgs e)
         {
             
             if (string.IsNullOrEmpty(register2_qual.Text)==false&&((register2_female.Checked || register2_male.Checked)&&(register_RB_trainee.Checked|| register_RB_trainer.Checked)))
             {
-                string Mof;
+                
                 if (register2_female.Checked)
                 {
-                    Mof = "Female";
+                    Gender = "Female";
                 }
                 else
                 {
-                    Mof = "Male";
+                    Gender = "Male";
                 }
-                string qual=register2_qual.Text;
-                string currentpos;
                 if (register_RB_trainee.Checked)
                 {
-                    currentpos = "trainee";
+                    CurrentPos = "Trainee";
                 }
                 else
                 {
-                    currentpos = "trainer";
+                    CurrentPos = "Trainer";
                 }
-                register3 register3 = new register3(FirstName,LastName,UserName,Email,Number,ID,Mof,qual,currentpos);
+                qualf = register2_qual.Text;
+                register3 register3 = new register3();
                 this.Controls.Add(register3);
                 register3.BringToFront();
             }
