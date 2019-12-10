@@ -13,13 +13,13 @@ namespace upcourse
 {
     public partial class mainscreen : UserControl
     {
-        static string databaseString = "Data Source=DESKTOP-6GK3Q7F\\SQLEXPRESS;Initial Catalog='Course Mangment System';Integrated Security=True";
-       
-       static SqlConnection dbconnection = new SqlConnection(databaseString);
+        static string databaseString = "Data Source=DESKTOP-9UTNJPD\\SQLEXPRESS;Initial Catalog='Course Mangment System';Integrated Security=True";
+
+        static SqlConnection dbconnection = new SqlConnection(databaseString);
         public mainscreen()
         {
             InitializeComponent();
-            
+
 
         }
 
@@ -31,7 +31,7 @@ namespace upcourse
             register.BringToFront();
         }
 
-        
+
         private void mainScreen_loginBtn_Click(object sender, EventArgs e)
         {
             String txtUsername = mainScreen_username.Text;
@@ -41,23 +41,41 @@ namespace upcourse
             {
 
                 // modify it to your server and db name
-               
+
                 dbconnection.Open();
-            
+
                 string checkCredentials = "Select * from Trainee Where UserName = '" + mainScreen_username.Text + "' and Password = '" + mainScreen_password.Text.Trim() + "'";
                 SqlDataAdapter asd = new SqlDataAdapter(checkCredentials, dbconnection);
-
                 DataTable dtbl = new DataTable();
                 asd.Fill(dtbl);
+
+
+                string checkCredentialsTrainer = "Select * from Trainer Where UserName = '" + mainScreen_username.Text + "' and Password = '" + mainScreen_password.Text.Trim() + "'";
+                SqlDataAdapter dsa = new SqlDataAdapter(checkCredentialsTrainer, dbconnection);
+                DataTable dtbl2 = new DataTable();
+                dsa.Fill(dtbl2);
+
+
                 if (dtbl.Rows.Count == 1)
                 {
                     MessageBox.Show("Login Successsful !");
+                    userForm objuserForm = new userForm();
+                    this.Hide();
+                    objuserForm.Show();
+
                 }
-                else {throw new Exception("Something Went Wrong!");}
+                else if (dtbl2.Rows.Count == 1)
+                {
+
+                    MessageBox.Show("Successsful Trainer Login !");
+                    //we efta7 form el trainer
+                }
+                else { throw new Exception("Something Went Wrong!"); }
 
                 dbconnection.Close();
             }
-            catch (Exception Ex){
+            catch (Exception Ex)
+            {
                 MessageBox.Show("Check your username and password \n", Ex.Message);
             }
         }
