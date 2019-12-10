@@ -68,3 +68,4 @@ C:\Users\ak417\Downloads\My-Github\Course-management-system\upcourse\upcourse\ob
 C:\Users\ak417\Downloads\My-Github\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.exe
 C:\Users\ak417\Downloads\My-Github\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.pdb
 F:\Up Course\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.userForm.resources
+F:\Up Course\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.userformAllCourses.resources
