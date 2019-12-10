@@ -45,5 +45,11 @@ namespace upcourse
         {
 
         }
+
+        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        {
+            userForm uf = new userForm();
+            uf.ShowDialog();
+        }
     }
 }
