@@ -39,20 +39,6 @@ F:\Up Course\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.cspro
 F:\Up Course\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.exe
 F:\Up Course\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.pdb
 F:\Up Course\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.csproj.CopyComplete
-C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\bin\Debug\upcourse.exe.config
-C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\bin\Debug\upcourse.exe
-C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\bin\Debug\upcourse.pdb
-C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.csprojAssemblyReference.cache
-C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.Form1.resources
-C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.mainscreen.resources
-C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.Properties.Resources.resources
-C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.register.resources
-C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.register2.resources
-C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.register3.resources
-C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.csproj.GenerateResource.cache
-C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.csproj.CopyComplete
-C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.exe
-C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.pdb
 C:\Users\ak417\Downloads\My-Github\Course-management-system\upcourse\upcourse\bin\Debug\upcourse.exe.config
 C:\Users\ak417\Downloads\My-Github\Course-management-system\upcourse\upcourse\bin\Debug\upcourse.exe
 C:\Users\ak417\Downloads\My-Github\Course-management-system\upcourse\upcourse\bin\Debug\upcourse.pdb
@@ -68,4 +54,21 @@ C:\Users\ak417\Downloads\My-Github\Course-management-system\upcourse\upcourse\ob
 C:\Users\ak417\Downloads\My-Github\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.exe
 C:\Users\ak417\Downloads\My-Github\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.pdb
 F:\Up Course\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.userForm.resources
+<<<<<<< HEAD
 F:\Up Course\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.userformAllCourses.resources
+=======
+C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\bin\Debug\upcourse.exe.config
+C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\bin\Debug\upcourse.exe
+C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\bin\Debug\upcourse.pdb
+C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.Form1.resources
+C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.mainscreen.resources
+C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.Properties.Resources.resources
+C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.register.resources
+C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.register2.resources
+C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.register3.resources
+C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.userForm.resources
+C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.csproj.GenerateResource.cache
+C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.csproj.CopyComplete
+C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.exe
+C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.pdb
+>>>>>>> 075e58dcb9a156f35f776e56df085d5730dee09a

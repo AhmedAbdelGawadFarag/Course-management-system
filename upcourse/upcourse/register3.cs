@@ -18,34 +18,23 @@ namespace upcourse
             InitializeComponent();
 
         }
-        public register3(string firstName, string lastName, string userName, string email, string number, string iD,string MorF,string Qual,string CurrentPos)
-        {
-            InitializeComponent();
-            
-            System.Console.WriteLine(firstName) ;
-            System.Console.WriteLine(lastName);
-            System.Console.WriteLine(userName);
-            System.Console.WriteLine(email);
-            System.Console.WriteLine(number);
-            System.Console.WriteLine(iD);
-            System.Console.WriteLine(MorF);
-            System.Console.WriteLine(Qual);
-            System.Console.WriteLine(CurrentPos);
-
-
-
-
-
-
-
-        }
+        
         private void register3_signup_Click(object sender, EventArgs e)
         {
             if(string.IsNullOrEmpty(register3_pass.Text) == false&& string.IsNullOrEmpty(register3_rePass.Text) == false&&register3_terms.Checked)
             {
-               
+
+                if (register2.GetCurrentPos()=="Trainer")
+                {
+                    
+
+                }
+                else
+                {
 
 
+                }
+                
             }
             else
             {
