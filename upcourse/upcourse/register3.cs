@@ -47,5 +47,10 @@ namespace upcourse
         {
             this.Hide();
         }
+
+        private void register3_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

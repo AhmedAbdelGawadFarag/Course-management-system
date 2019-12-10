@@ -128,6 +128,7 @@
             this.Controls.Add(this.label6);
             this.Name = "register3";
             this.Size = new System.Drawing.Size(466, 462);
+            this.Load += new System.EventHandler(this.register3_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
