@@ -17,6 +17,7 @@ namespace upcourse
             InitializeComponent();
 
             panel9.Visible = false;
+
             //----------------------------------------------colors----------------------------------------------------------------------------
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(179)))), ((int)(((byte)(70)))));
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(30)))), ((int)(((byte)(20)))));
@@ -50,7 +51,9 @@ namespace upcourse
 
         private void button3_Click(object sender, EventArgs e)
         {
-            panel9.Visible = true;
+            animationLeaf.ShowSync(panel9);
+            animationHoriz.HideSync(userFormHome1);
+
             //----------------------------------------------colors----------------------------------------------------------------------------
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(179)))), ((int)(((byte)(70)))));
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(30)))), ((int)(((byte)(20)))));
@@ -59,7 +62,10 @@ namespace upcourse
 
         private void button1_Click(object sender, EventArgs e)
         {
-            panel9.Visible = false;
+            animationLeaf.HideSync(panel9);
+            animationHoriz.ShowSync(userFormHome1);
+
+
             //----------------------------------------------colors----------------------------------------------------------------------------
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(179)))), ((int)(((byte)(70)))));
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(30)))), ((int)(((byte)(20)))));
@@ -69,7 +75,9 @@ namespace upcourse
 
         private void button2_Click(object sender, EventArgs e)
         {
-            panel9.Visible = false;
+            animationHoriz.HideSync(userFormHome1);
+            animationLeaf.HideSync(panel9);
+
             //----------------------------------------------colors----------------------------------------------------------------------------
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(179)))), ((int)(((byte)(70)))));
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(30)))), ((int)(((byte)(20)))));
@@ -90,6 +98,31 @@ namespace upcourse
         private void panel2_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+
+        }
+
+        private void userFormHome1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuFlatButton2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuFlatButton4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuFlatButton6_Click(object sender, EventArgs e)
+        {
 
         }
     }

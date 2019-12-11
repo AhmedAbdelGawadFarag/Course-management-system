@@ -98,6 +98,12 @@
     <Compile Include="userformAllCourses.Designer.cs">
       <DependentUpon>userformAllCourses.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserFormHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserFormHome.Designer.cs">
+      <DependentUpon>UserFormHome.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -128,6 +134,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="userformAllCourses.resx">
       <DependentUpon>userformAllCourses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserFormHome.resx">
+      <DependentUpon>UserFormHome.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -171,6 +180,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\formBackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9-98660_svg-transparent-stock-innovation-courses-workshops-did-you.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\large_upcourse.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
