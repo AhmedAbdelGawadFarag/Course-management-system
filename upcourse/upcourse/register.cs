@@ -47,6 +47,21 @@ namespace upcourse
         {
             return ID;
         }
+        bool ISnumber(string number)
+        {
+            for (int i = 0; i < number.Length; i++)
+            {
+                if ((int)number.ElementAt(i) >= (int)'0' && (int)number.ElementAt(i) <= (int)'9')
+                {
+
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
 
         private void register_nextBtn_Click(object sender, EventArgs e)
         {
@@ -55,16 +70,23 @@ namespace upcourse
                 string.IsNullOrEmpty(register_username.Text) == false && string.IsNullOrEmpty(register_email.Text) == false &&
                 string.IsNullOrEmpty(register_email.Text) == false && string.IsNullOrEmpty(register_id.Text) == false)
             {
-                FirstName = register_firstName.Text;
-                LastName = register_lastName.Text;
-                UserName = register_username.Text;
-                Email = register_email.Text;
-                Number = register_number.Text;
-                ID=register_id.Text; 
-               
-                register2 register2 = new register2();
-                this.Controls.Add(register2);
-                register2.BringToFront();
+                if (ISnumber(register_id.Text)==true&&ISnumber(register_number.Text)==true)
+                {
+                    FirstName = register_firstName.Text;
+                    LastName = register_lastName.Text;
+                    UserName = register_username.Text;
+                    Email = register_email.Text;
+                    Number = register_number.Text;
+                    ID = register_id.Text;
+
+                    register2 register2 = new register2();
+                    this.Controls.Add(register2);
+                    register2.BringToFront();
+                }
+                else
+                {
+                    MessageBox.Show("ID and Number fields cannot be string");
+                }
             }
             else
             {

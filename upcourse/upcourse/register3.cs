@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace upcourse
 {
@@ -18,23 +19,84 @@ namespace upcourse
             InitializeComponent();
 
         }
-        
+
+      
+
         private void register3_signup_Click(object sender, EventArgs e)
         {
             if(string.IsNullOrEmpty(register3_pass.Text) == false&& string.IsNullOrEmpty(register3_rePass.Text) == false&&register3_terms.Checked)
             {
 
-                if (register2.GetCurrentPos()=="Trainer")
-                {
-                    
+                if (register3_pass.Text==register3_rePass.Text) {
 
+                    if (register2.GetCurrentPos() == "Trainer")
+                    {
+                        SqlCommand checkemail = new SqlCommand("select * from trainer where Email=@mail", Program.dbconnection);
+                        checkemail.Parameters.AddWithValue("@mail", register.getEmail());
+                        SqlDataReader EmailData = checkemail.ExecuteReader();
+
+                        if (EmailData.HasRows == false) {
+                            EmailData.Close();
+                            SqlCommand NewRegister = new SqlCommand("insert into Trainer values(@ID, @Username, @Password, @Email, @Gender, @Age, @Phone, @firstName, @LastName)", Program.dbconnection);
+                            NewRegister.Parameters.AddWithValue("ID", register.getId());
+                            NewRegister.Parameters.AddWithValue("Username", register.getUserName());
+                            NewRegister.Parameters.AddWithValue("Password", register3_pass.Text);
+                            NewRegister.Parameters.AddWithValue("Email", register.getEmail());
+                            NewRegister.Parameters.AddWithValue("Gender", register2.GetGender());
+                            NewRegister.Parameters.AddWithValue("Age", "12");
+                            NewRegister.Parameters.AddWithValue("Phone", register.getNumber());
+                            NewRegister.Parameters.AddWithValue("FirstName", register.getFirstName());
+                            NewRegister.Parameters.AddWithValue("LastName", register.getLastName());
+                            NewRegister.ExecuteNonQuery();
+                            MessageBox.Show("succesful register");
+                        }
+                        else
+                        {
+                            EmailData.Close();
+                            MessageBox.Show("Email exist");
+
+                        }
+
+
+                    }
+                    else
+                    {
+
+                        SqlCommand checkemail = new SqlCommand("select * from Trainee where Email=@mail", Program.dbconnection);
+                        checkemail.Parameters.AddWithValue("@mail", register.getEmail());
+                        SqlDataReader EmailData = checkemail.ExecuteReader();
+
+                        if (EmailData.HasRows == false)
+                        {
+                            EmailData.Close();
+                            SqlCommand NewRegister = new SqlCommand("insert into Trainee values(@ID, @Username, @Password, @Email, @Gender, @Age, @Phone, @firstName, @LastName)", Program.dbconnection);
+                            NewRegister.Parameters.AddWithValue("ID", register.getId());
+                            NewRegister.Parameters.AddWithValue("Username", register.getUserName());
+                            NewRegister.Parameters.AddWithValue("Password", register3_pass.Text);
+                            NewRegister.Parameters.AddWithValue("Email", register.getEmail());
+                            NewRegister.Parameters.AddWithValue("Gender", register2.GetGender());
+                            NewRegister.Parameters.AddWithValue("Age", "12");
+                            NewRegister.Parameters.AddWithValue("Phone", register.getNumber());
+                            NewRegister.Parameters.AddWithValue("FirstName", register.getFirstName());
+                            NewRegister.Parameters.AddWithValue("LastName", register.getLastName());
+                            NewRegister.ExecuteNonQuery();
+                            MessageBox.Show("succesful register");
+                        }
+                        else
+                        {
+                            EmailData.Close();
+                            MessageBox.Show("Email exist");
+
+                        }
+
+
+                    }
                 }
                 else
                 {
-
-
+                    MessageBox.Show("password fields must match");
                 }
-                
+
             }
             else
             {
