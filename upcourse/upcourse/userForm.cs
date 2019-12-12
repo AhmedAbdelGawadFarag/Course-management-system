@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace upcourse
 {
@@ -17,11 +18,17 @@ namespace upcourse
             InitializeComponent();
 
             panel9.Visible = false;
-
             //----------------------------------------------colors----------------------------------------------------------------------------
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(179)))), ((int)(((byte)(70)))));
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(30)))), ((int)(((byte)(20)))));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(30)))), ((int)(((byte)(20)))));
+
+            getCoursesDB();
+
+            this.CoursesLayoutPanel.BackColor = Color.Red;
+        
+            this.userFormHome1.Controls.Add(CoursesLayoutPanel);
+            CoursesLayoutPanel.BringToFront();
         }
 
         private void userForm_Load(object sender, EventArgs e)
@@ -124,6 +131,25 @@ namespace upcourse
         private void bunifuFlatButton6_Click(object sender, EventArgs e)
         {
 
+        }
+
+        public static void registerCourseButtonClick(object sender, EventArgs e)
+        {
+          //  CoursePanel p = (CoursePanel)sender;
+           // int courseId = p.getCourseId();
+            //MessageBox.Show(courseId.ToString());
+        }
+
+        private void getCoursesDB()
+        {
+            SqlCommand Courses = new SqlCommand("select * from course", Program.dbconnection);
+          SqlDataReader data= Courses.ExecuteReader();
+            while (data.Read())
+            {
+                CoursePanel pnl = new CoursePanel(data.GetInt32(0), data.GetString(3), data.GetString(5));
+                this.CoursesLayoutPanel.Controls.Add(pnl);
+            }
+            data.Close();
         }
     }
 }

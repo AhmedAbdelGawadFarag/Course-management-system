@@ -33,7 +33,9 @@ namespace upcourse
                     {
                         SqlCommand checkemail = new SqlCommand("select * from trainer where Email=@mail", Program.dbconnection);
                         checkemail.Parameters.AddWithValue("@mail", register.getEmail());
+                        
                         SqlDataReader EmailData = checkemail.ExecuteReader();
+
 
                         if (EmailData.HasRows == false) {
                             EmailData.Close();

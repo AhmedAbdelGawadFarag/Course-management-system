@@ -13,7 +13,7 @@ namespace upcourse
 {
     public partial class mainscreen : UserControl
     {
-        
+         static int UserId;
         public mainscreen()
         {
             InitializeComponent();
@@ -35,47 +35,60 @@ namespace upcourse
             String txtUsername = mainScreen_username.Text;
             String txtPassword = mainScreen_password.Text;
 
-            try
-            {
+            //try
+            //{
 
                 // modify it to your server and db name
 
 
 
                 string checkCredentials = "Select * from Trainee Where UserName = '" + mainScreen_username.Text + "' and Password = '" + mainScreen_password.Text.Trim() + "'";
-                SqlDataAdapter asd = new SqlDataAdapter(checkCredentials, Program.dbconnection);
-                DataTable dtbl = new DataTable();
-                asd.Fill(dtbl);
+                SqlCommand CheckTrainee = new SqlCommand(checkCredentials, Program.dbconnection);
+                SqlDataReader TraineeData = CheckTrainee.ExecuteReader();
+              
 
-
-                string checkCredentialsTrainer = "Select * from Trainer Where UserName = '" + mainScreen_username.Text + "' and Password = '" + mainScreen_password.Text.Trim() + "'";
-                SqlDataAdapter dsa = new SqlDataAdapter(checkCredentialsTrainer, Program.dbconnection);
-                DataTable dtbl2 = new DataTable();
-                dsa.Fill(dtbl2);
-
-
-                if (dtbl.Rows.Count == 1)
+                if (TraineeData.HasRows)
                 {
-                    MessageBox.Show("Login Successsful !");
+                    MessageBox.Show("Successsful Trainee Login !");
+                    TraineeData.Read();
+                   UserId=TraineeData.GetInt32(0);
+                    TraineeData.Close();
+                    Console.WriteLine(UserId.ToString());
                     userForm objuserForm = new userForm();
                     this.Hide();
                     objuserForm.Show();
 
                 }
-                else if (dtbl2.Rows.Count == 1)
+                else  
+                {
+                TraineeData.Close();
+                string checkCredentialsTrainer = "Select * from Trainer Where UserName = '" + mainScreen_username.Text + "' and Password = '" + mainScreen_password.Text.Trim() + "'";
+                SqlCommand CheckTrainer = new SqlCommand(checkCredentialsTrainer, Program.dbconnection);
+                SqlDataReader TrainerData = CheckTrainer.ExecuteReader();
+                if (TrainerData.HasRows)
+                {
+                        TrainerData.Read();
+                    MessageBox.Show("Successsful Trainer Login !");
+                        UserId = TrainerData.GetInt32(0);
+                }
+                else
                 {
 
-                    MessageBox.Show("Successsful Trainer Login !");
-                    //we efta7 form el trainer
+                    MessageBox.Show("Check your username and password \n");
                 }
-                else { throw new Exception("Something Went Wrong!"); }
 
-            }
-            catch (Exception Ex)
-            {
-                MessageBox.Show("Check your username and password \n", Ex.Message);
-            }
-        }
+
+                TrainerData.Close();
+                   
+                }
+          
+
+        //}
+           // catch (Exception Ex)
+            //{
+              //  MessageBox.Show(Ex.Message);
+            //}
+}
 
         private void mainScreen_username_TextChanged(object sender, EventArgs e)
         {
@@ -90,6 +103,10 @@ namespace upcourse
         private void mainscreen_Load(object sender, EventArgs e)
         {
 
+        }
+        public static int GetUserID()
+        {
+            return UserId;
         }
     }
 }
