@@ -42,7 +42,7 @@ namespace upcourse
 
 
 
-                string checkCredentials = "Select * from Trainee Where UserName = '" + mainScreen_username.Text + "' and Password = '" + mainScreen_password.Text.Trim() + "'";
+                string checkCredentials = "Select * from Trainee Where UserName = '" + mainScreen_username.Text + "' and Pass = '" + mainScreen_password.Text.Trim() + "'";
                 SqlCommand CheckTrainee = new SqlCommand(checkCredentials, Program.dbconnection);
                 SqlDataReader TraineeData = CheckTrainee.ExecuteReader();
               

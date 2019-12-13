@@ -42,6 +42,7 @@ namespace upcourse
         {
             return CurrentPos;
         }
+      
         private void register2_loginBtn_Click(object sender, EventArgs e)
         {
             

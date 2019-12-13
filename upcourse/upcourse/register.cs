@@ -70,7 +70,7 @@ namespace upcourse
                 string.IsNullOrEmpty(register_username.Text) == false && string.IsNullOrEmpty(register_email.Text) == false &&
                 string.IsNullOrEmpty(register_email.Text) == false && string.IsNullOrEmpty(register_id.Text) == false)
             {
-                if (ISnumber(register_id.Text)==true&&ISnumber(register_number.Text)==true)
+                if (ISnumber(register_number.Text)==true)
                 {
                     FirstName = register_firstName.Text;
                     LastName = register_lastName.Text;
@@ -85,7 +85,7 @@ namespace upcourse
                 }
                 else
                 {
-                    MessageBox.Show("ID and Number fields cannot be string");
+                    MessageBox.Show("Number field cannot be string");
                 }
             }
             else
