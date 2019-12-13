@@ -24,12 +24,10 @@ namespace upcourse
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(30)))), ((int)(((byte)(20)))));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(30)))), ((int)(((byte)(20)))));
 
-<<<<<<< HEAD
-            //getCoursesDB();
 
-=======
+
             getCoursesDB();
->>>>>>> bc0bd0d376368fc61fa1e107e780aeb019985214
+
             this.CoursesLayoutPanel.BackColor = Color.Red;
         
 
@@ -167,12 +165,6 @@ namespace upcourse
             data.Close();
         }
 
-<<<<<<< HEAD
-        private void user_acc1_Load(object sender, EventArgs e)
-        {
 
-        }
-=======
->>>>>>> bc0bd0d376368fc61fa1e107e780aeb019985214
     }
 }

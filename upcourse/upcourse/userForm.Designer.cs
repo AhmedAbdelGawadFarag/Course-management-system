@@ -787,7 +787,6 @@
             this.user_acc1.Name = "user_acc1";
             this.user_acc1.Size = new System.Drawing.Size(1295, 657);
             this.user_acc1.TabIndex = 21;
-            this.user_acc1.Load += new System.EventHandler(this.user_acc1_Load);
             // 
             // userFormHome1
             // 
