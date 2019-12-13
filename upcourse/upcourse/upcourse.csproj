@@ -54,6 +54,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="adminCoursesList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="adminCoursesList.Designer.cs">
+      <DependentUpon>adminCoursesList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminForm.Designer.cs">
+      <DependentUpon>adminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="adminHome.Designer.cs">
+      <DependentUpon>adminHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminTrainee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="adminTrainee.Designer.cs">
+      <DependentUpon>adminTrainee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminTrainers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="adminTrainers.Designer.cs">
+      <DependentUpon>adminTrainers.cs</DependentUpon>
+    </Compile>
     <Compile Include="CoursePanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -116,6 +146,21 @@
     <Compile Include="user_acc.Designer.cs">
       <DependentUpon>user_acc.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="adminCoursesList.resx">
+      <DependentUpon>adminCoursesList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminForm.resx">
+      <DependentUpon>adminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminHome.resx">
+      <DependentUpon>adminHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminTrainee.resx">
+      <DependentUpon>adminTrainee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminTrainers.resx">
+      <DependentUpon>adminTrainers.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CoursePanel.resx">
       <DependentUpon>CoursePanel.cs</DependentUpon>
     </EmbeddedResource>

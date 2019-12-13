@@ -75,9 +75,9 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.userFormHome1 = new upcourse.UserFormHome();
             this.animationHoriz = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.user_acc1 = new upcourse.user_acc();
+            this.userFormHome1 = new upcourse.UserFormHome();
             this.menu.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel11.SuspendLayout();
@@ -332,9 +332,9 @@
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.label5.Location = new System.Drawing.Point(645, 22);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(287, 24);
+            this.label5.Size = new System.Drawing.Size(316, 24);
             this.label5.TabIndex = 1;
-            this.label5.Text = "Orderla , All Rights Reserved.";
+            this.label5.Text = "Up Course , All Rights Reserved.";
             // 
             // panel9
             // 
@@ -643,7 +643,7 @@
             this.CoursesLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.CoursesLayoutPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.CoursesLayoutPanel.Location = new System.Drawing.Point(0, 0);
-            this.CoursesLayoutPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CoursesLayoutPanel.Margin = new System.Windows.Forms.Padding(4);
             this.CoursesLayoutPanel.Name = "CoursesLayoutPanel";
             this.CoursesLayoutPanel.Size = new System.Drawing.Size(208, 7);
             this.CoursesLayoutPanel.TabIndex = 21;
@@ -756,17 +756,6 @@
             this.panel2.TabIndex = 7;
             this.panel2.Click += new System.EventHandler(this.panel2_Click);
             // 
-            // userFormHome1
-            // 
-            this.userFormHome1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.animationLeaf.SetDecoration(this.userFormHome1, BunifuAnimatorNS.DecorationType.None);
-            this.animationHoriz.SetDecoration(this.userFormHome1, BunifuAnimatorNS.DecorationType.None);
-            this.userFormHome1.Location = new System.Drawing.Point(208, 89);
-            this.userFormHome1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.userFormHome1.Name = "userFormHome1";
-            this.userFormHome1.Size = new System.Drawing.Size(1296, 665);
-            this.userFormHome1.TabIndex = 20;
-            // 
             // animationHoriz
             // 
             this.animationHoriz.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
@@ -794,10 +783,22 @@
             this.user_acc1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.animationLeaf.SetDecoration(this.user_acc1, BunifuAnimatorNS.DecorationType.None);
             this.animationHoriz.SetDecoration(this.user_acc1, BunifuAnimatorNS.DecorationType.None);
-            this.user_acc1.Location = new System.Drawing.Point(211, 89);
+            this.user_acc1.Location = new System.Drawing.Point(209, 97);
             this.user_acc1.Name = "user_acc1";
             this.user_acc1.Size = new System.Drawing.Size(1295, 657);
             this.user_acc1.TabIndex = 21;
+            this.user_acc1.Load += new System.EventHandler(this.user_acc1_Load);
+            // 
+            // userFormHome1
+            // 
+            this.userFormHome1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.animationLeaf.SetDecoration(this.userFormHome1, BunifuAnimatorNS.DecorationType.None);
+            this.animationHoriz.SetDecoration(this.userFormHome1, BunifuAnimatorNS.DecorationType.None);
+            this.userFormHome1.Location = new System.Drawing.Point(208, 89);
+            this.userFormHome1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.userFormHome1.Name = "userFormHome1";
+            this.userFormHome1.Size = new System.Drawing.Size(1296, 665);
+            this.userFormHome1.TabIndex = 20;
             // 
             // userForm
             // 
