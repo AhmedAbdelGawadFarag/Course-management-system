@@ -31,9 +31,9 @@ namespace upcourse
 
                     if (register2.GetCurrentPos() == "Trainer")
                     {
-                        SqlCommand checkemail = new SqlCommand("select * from trainer where Email=@mail", Program.dbconnection);
+                        SqlCommand checkemail = new SqlCommand("select * from trainer where Email=@mail or UserName=@Usrnam", Program.dbconnection);
                         checkemail.Parameters.AddWithValue("@mail", register.getEmail());
-                        
+                        checkemail.Parameters.AddWithValue("@Usrnam",register.getUserName());
                         SqlDataReader EmailData = checkemail.ExecuteReader();
 
 
@@ -55,7 +55,7 @@ namespace upcourse
                         else
                         {
                             EmailData.Close();
-                            MessageBox.Show("Email exist");
+                            MessageBox.Show("Email or user Name exist");
 
                         }
 
@@ -64,8 +64,9 @@ namespace upcourse
                     else
                     {
 
-                        SqlCommand checkemail = new SqlCommand("select * from Trainee where Email=@mail", Program.dbconnection);
+                        SqlCommand checkemail = new SqlCommand("select * from Trainee where Email=@mail or UserName=@Usrnam ", Program.dbconnection);
                         checkemail.Parameters.AddWithValue("@mail", register.getEmail());
+                        checkemail.Parameters.AddWithValue("@Usrnam", register.getUserName());
                         SqlDataReader EmailData = checkemail.ExecuteReader();
 
                         if (EmailData.HasRows == false)

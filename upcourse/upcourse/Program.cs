@@ -9,7 +9,7 @@ namespace upcourse
 {
     static class Program
     {
-     public static string databaseString = "Data Source=LAPCOM\\SQLS;Initial Catalog=Course Mangment System.bacpac;Integrated Security=True";
+     public static string databaseString = "Data Source=DESKTOP-KHVRBGT\\SQLEXPRESS;Initial Catalog=Course Mangment System.bacpac;Integrated Security=True";
 
      public static SqlConnection dbconnection = new SqlConnection(databaseString);
         /// <summary>
