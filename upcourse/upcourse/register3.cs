@@ -71,7 +71,7 @@ namespace upcourse
                         if (EmailData.HasRows == false)
                         {
                             EmailData.Close();
-                            SqlCommand NewRegister = new SqlCommand("insert into Trainee values( @Username, @Password, @Email, @Gender, @Age, @Phone, @firstName, @LastName,@ID)", Program.dbconnection);
+                            SqlCommand NewRegister = new SqlCommand("insert into Trainee values( @Username, @Password, @Email, @Gender, @Age, @Phone, @firstName, @LastName,@ID,@qua)", Program.dbconnection);
                             NewRegister.Parameters.AddWithValue("Username", register.getUserName());
                             NewRegister.Parameters.AddWithValue("Password", register3_pass.Text);
                             NewRegister.Parameters.AddWithValue("Email", register.getEmail());
@@ -81,6 +81,7 @@ namespace upcourse
                             NewRegister.Parameters.AddWithValue("FirstName", register.getFirstName());
                             NewRegister.Parameters.AddWithValue("LastName", register.getLastName());
                             NewRegister.Parameters.AddWithValue("ID", register.getId());
+                            NewRegister.Parameters.AddWithValue("qua", register2.GetQualf());
                             NewRegister.ExecuteNonQuery();
                             MessageBox.Show("succesful register");
                         }

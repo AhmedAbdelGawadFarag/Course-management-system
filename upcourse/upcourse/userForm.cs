@@ -13,6 +13,7 @@ namespace upcourse
 {
     public partial class userForm : Form
     {
+        public int userID;
         public userForm()
         {
             InitializeComponent();
@@ -24,11 +25,12 @@ namespace upcourse
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(30)))), ((int)(((byte)(20)))));
 
             getCoursesDB();
-
             this.CoursesLayoutPanel.BackColor = Color.Red;
         
+
             this.userFormHome1.Controls.Add(CoursesLayoutPanel);
             CoursesLayoutPanel.BringToFront();
+            this.user_acc1.getUserData(mainscreen.GetUserID());
         }
 
         private void userForm_Load(object sender, EventArgs e)
@@ -159,5 +161,6 @@ namespace upcourse
             }
             data.Close();
         }
+
     }
 }
