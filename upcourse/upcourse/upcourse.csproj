@@ -110,6 +110,12 @@
     <Compile Include="UserFormHome.Designer.cs">
       <DependentUpon>UserFormHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="user_acc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="user_acc.Designer.cs">
+      <DependentUpon>user_acc.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="CoursePanel.resx">
       <DependentUpon>CoursePanel.cs</DependentUpon>
     </EmbeddedResource>
@@ -146,6 +152,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserFormHome.resx">
       <DependentUpon>UserFormHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user_acc.resx">
+      <DependentUpon>user_acc.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -195,6 +204,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\large_upcourse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\31590511_967395850083062_605743804967813120_n.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

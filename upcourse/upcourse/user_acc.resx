@@ -117,44 +117,39 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="iconfinder_facebook_circle_294710" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconfinder_facebook_circle_294710.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="bunifuThinButton21.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAMsAAAA6CAYAAAAeNa2PAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAJmSURBVHhe7d1NSxtRFIfxfpnJjM4kfdFKoKhQRFIVRTG0
+        0HXBhQguBKGLUuhC6Ic+nf9JJpOZTNKzNfMsfpCXq6t5mHsTyHmTJIkB+D9iAYKIBQgiFiCIWIAgYgGC
+        NseSpZZNDiy/O7Xi8cyGv65t9PcrsDV0TevaLu4nlp2PbVBk3S2U1saSfd7zf6RQFEx2/MEG7/POtcBr
+        pWta13Z6sm/5jxO/5hVN19qVWFSW/ih/+GKDt7uN94Btt+n6b8SihcXz5dqygL7Qzqp4umjsphqxqChC
+        AWa0PdN5pnq+iEUl6dZTPQeQ2M73Y9udHvrjWSxZ6gcbzihAS9mGjiaDj8NZLNp6aQu2shCA31l0h/FY
+        9BmzPjprLwKQWDoe+d3FYxn+vPLbTHsRgFK5FRu9TOex/Lnd+M0l0Hf6tt9j0YP2mwBqxAIEEQsQRCxA
+        ELEAQcQCBBELEEQsQBCxAEHEAgQRCxBELEAQsQBBxAIEEQsQRCxAELEAQcQCBBELEEQsQBCxAEHEAgQR
+        CxBELEAQsQBBdSwvU/+JyvYCADOLWHzcBPMigbUWsWiIkYYZtRcASPxH8/Xj+R5LNX+ivQhAPb/IY9EW
+        TOVwbgFWVfOLPBbZ+XbklhcBfZdNDiy/O/XHi1h8dt7jmaWf3jUWA32lGas+6Gs+u6iORW+WB5lq2OTy
+        60DfKBTdPDTeu3qtEYvozqJgqnHGQN/ofKI7ynIoshKLK7dk+nTMyzofM/IbW09brep8ogN919jI7ljm
+        VJY+Mhv+vvEvZYBtpbmqCkXBdLUgG2MBUCMWIIhYgCBiAYKIBQhJ7B9vRezmREqnhgAAAABJRU5ErkJg
+        gg==
+</value>
   </data>
-  <data name="large_upcourse" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\large_upcourse.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="iconfinder_twitter_circle_294709" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconfinder_twitter_circle_294709.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="formBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\formBackground.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="iconfinder_google_circle_294707" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconfinder_google_circle_294707.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-shutdown-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-shutdown-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="login screen" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\login screen.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="9-98660_svg-transparent-stock-innovation-courses-workshops-did-you" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\9-98660_svg-transparent-stock-innovation-courses-workshops-did-you.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-delete-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-delete-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="login screen1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\login screen1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-x-lowercase-26" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-x-lowercase-26.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-horizontal-line-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-horizontal-line-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="31590511_967395850083062_605743804967813120_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\31590511_967395850083062_605743804967813120_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bunifuThinButton22.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAMsAAAA6CAYAAAAeNa2PAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAJmSURBVHhe7d1NSxtRFIfxfpnJjM4kfdFKoKhQRFIVRTG0
+        0HXBhQguBKGLUuhC6Ic+nf9JJpOZTNKzNfMsfpCXq6t5mHsTyHmTJIkB+D9iAYKIBQgiFiCIWIAgYgGC
+        NseSpZZNDiy/O7Xi8cyGv65t9PcrsDV0TevaLu4nlp2PbVBk3S2U1saSfd7zf6RQFEx2/MEG7/POtcBr
+        pWta13Z6sm/5jxO/5hVN19qVWFSW/ih/+GKDt7uN94Btt+n6b8SihcXz5dqygL7Qzqp4umjsphqxqChC
+        AWa0PdN5pnq+iEUl6dZTPQeQ2M73Y9udHvrjWSxZ6gcbzihAS9mGjiaDj8NZLNp6aQu2shCA31l0h/FY
+        9BmzPjprLwKQWDoe+d3FYxn+vPLbTHsRgFK5FRu9TOex/Lnd+M0l0Hf6tt9j0YP2mwBqxAIEEQsQRCxA
+        ELEAQcQCBBELEEQsQBCxAEHEAgQRCxBELEAQsQBBxAIEEQsQRCxAELEAQcQCBBELEEQsQBCxAEHEAgQR
+        CxBELEAQsQBBdSwvU/+JyvYCADOLWHzcBPMigbUWsWiIkYYZtRcASPxH8/Xj+R5LNX+ivQhAPb/IY9EW
+        TOVwbgFWVfOLPBbZ+XbklhcBfZdNDiy/O/XHi1h8dt7jmaWf3jUWA32lGas+6Gs+u6iORW+WB5lq2OTy
+        60DfKBTdPDTeu3qtEYvozqJgqnHGQN/ofKI7ynIoshKLK7dk+nTMyzofM/IbW09brep8ogN919jI7ljm
+        VJY+Mhv+vvEvZYBtpbmqCkXBdLUgG2MBUCMWIIhYgCBiAYKIBQhJ7B9vRezmREqnhgAAAABJRU5ErkJg
+        gg==
+</value>
   </data>
 </root>

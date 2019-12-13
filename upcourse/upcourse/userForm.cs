@@ -60,6 +60,8 @@ namespace upcourse
         {
             animationLeaf.ShowSync(panel9);
             animationHoriz.HideSync(userFormHome1);
+            animationHoriz.HideSync(user_acc1);
+
 
             //----------------------------------------------colors----------------------------------------------------------------------------
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(179)))), ((int)(((byte)(70)))));
@@ -70,7 +72,10 @@ namespace upcourse
         private void button1_Click(object sender, EventArgs e)
         {
             animationLeaf.HideSync(panel9);
+            animationHoriz.HideSync(user_acc1);
+
             animationHoriz.ShowSync(userFormHome1);
+
 
 
             //----------------------------------------------colors----------------------------------------------------------------------------
@@ -83,7 +88,10 @@ namespace upcourse
         private void button2_Click(object sender, EventArgs e)
         {
             animationHoriz.HideSync(userFormHome1);
+
             animationLeaf.HideSync(panel9);
+            animationHoriz.ShowSync(user_acc1);
+
 
             //----------------------------------------------colors----------------------------------------------------------------------------
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(179)))), ((int)(((byte)(70)))));

@@ -63,6 +63,16 @@ namespace upcourse.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _31590511_967395850083062_605743804967813120_n {
+            get {
+                object obj = ResourceManager.GetObject("31590511_967395850083062_605743804967813120_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _9_98660_svg_transparent_stock_innovation_courses_workshops_did_you {
             get {
                 object obj = ResourceManager.GetObject("9-98660_svg-transparent-stock-innovation-courses-workshops-did-you", resourceCulture);
