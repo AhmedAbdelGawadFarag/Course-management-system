@@ -209,6 +209,12 @@
     <Compile Include="TrainersPanel.Designer.cs">
       <DependentUpon>TrainersPanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="adminCourseAssign.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="adminCourseAssign.Designer.cs">
+      <DependentUpon>adminCourseAssign.cs</DependentUpon>
+    </Compile>
     <Compile Include="userForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -317,6 +323,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TrainersPanel.resx">
       <DependentUpon>TrainersPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminCourseAssign.resx">
+      <DependentUpon>adminCourseAssign.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="userForm.resx">
       <DependentUpon>userForm.cs</DependentUpon>
