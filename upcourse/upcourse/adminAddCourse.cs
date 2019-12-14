@@ -40,5 +40,16 @@ namespace upcourse
             this.Hide();
 
         }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+
+        }
     }
 }
