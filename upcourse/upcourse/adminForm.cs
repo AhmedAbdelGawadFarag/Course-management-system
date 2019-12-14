@@ -17,8 +17,11 @@ namespace upcourse
         public adminForm()
         {
             InitializeComponent();
-            adminHome1.BringToFront();
-            
+            adminCoursesList1.Visible = false;
+            adminTrainee1.Visible = false;
+            adminTrainers1.Visible = false;
+            adminHome1.Visible = true;
+
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
@@ -48,11 +51,12 @@ namespace upcourse
         {
             SidePanel.Height = button1.Height;
             SidePanel.Top = button1.Top;
-
-            animationHoriz.HideSync(adminTrainee1);
-            animationHoriz.HideSync(adminTrainers1);
-            animationHoriz.HideSync(adminCoursesList1);
+            adminCoursesList1.Visible = false;
+            adminTrainee1.Visible = false;
+            adminTrainers1.Visible = false;
             animationHoriz.ShowSync(adminHome1);
+           
+
 
       
 
@@ -64,10 +68,9 @@ namespace upcourse
         {
             SidePanel.Height = button3.Height;
             SidePanel.Top = button3.Top;
-
-            animationHoriz.HideSync(adminHome1);
-            animationHoriz.HideSync(adminTrainers1);
-            animationHoriz.HideSync(adminTrainee1);
+            adminHome1.Visible = false;
+            adminTrainee1.Visible = false;
+            adminTrainers1.Visible = false;
             animationHoriz.ShowSync(adminCoursesList1);
 
      
@@ -79,9 +82,9 @@ namespace upcourse
             SidePanel.Height = button2.Height;
             SidePanel.Top = button2.Top;
 
-            animationHoriz.HideSync(adminTrainee1);
-            animationHoriz.HideSync(adminHome1);
-            animationHoriz.HideSync(adminCoursesList1);
+            adminHome1.Visible = false;
+            adminTrainee1.Visible = false;
+            adminCoursesList1.Visible = false;
             animationHoriz.ShowSync(adminTrainers1);
 
           
@@ -93,9 +96,9 @@ namespace upcourse
             SidePanel.Height = button4.Height;
             SidePanel.Top = button4.Top;
 
-            animationHoriz.HideSync(adminHome1);
-            animationHoriz.HideSync(adminTrainers1);
-            animationHoriz.HideSync(adminCoursesList1);
+            adminHome1.Visible = false;
+            adminTrainers1.Visible = false;
+            adminCoursesList1.Visible = false;
             animationHoriz.ShowSync(adminTrainee1);
 
             
