@@ -88,5 +88,10 @@ namespace upcourse
 
             }
         }
+
+        private void user_acc_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

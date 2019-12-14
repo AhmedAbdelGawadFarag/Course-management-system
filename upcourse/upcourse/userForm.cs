@@ -18,6 +18,8 @@ namespace upcourse
         {
             InitializeComponent();
 
+            userFormHome1.Visible = true;
+            user_acc1.Visible = false;
             panel9.Visible = false;
             //----------------------------------------------colors----------------------------------------------------------------------------
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(179)))), ((int)(((byte)(70)))));
