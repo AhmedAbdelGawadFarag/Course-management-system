@@ -72,6 +72,12 @@
     <Compile Include="adminForm.Designer.cs">
       <DependentUpon>adminForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="adminFormAddCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminFormAddCourse.Designer.cs">
+      <DependentUpon>adminFormAddCourse.cs</DependentUpon>
+    </Compile>
     <Compile Include="adminHome.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -215,6 +221,9 @@
     <EmbeddedResource Include="adminForm.resx">
       <DependentUpon>adminForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="adminFormAddCourse.resx">
+      <DependentUpon>adminFormAddCourse.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="adminHome.resx">
       <DependentUpon>adminHome.cs</DependentUpon>
     </EmbeddedResource>
@@ -342,6 +351,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\31590511_967395850083062_605743804967813120_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %283%29.jfif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

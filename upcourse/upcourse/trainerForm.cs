@@ -82,5 +82,10 @@ namespace upcourse
             animationHoriz.HideSync(trainerFormCertificates1);
             animationHoriz.HideSync(trainerFormHome1);
         }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

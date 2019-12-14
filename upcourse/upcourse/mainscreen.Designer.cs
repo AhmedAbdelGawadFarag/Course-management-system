@@ -200,9 +200,9 @@
             this.mainScreen_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
             this.mainScreen_password.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(51)))), ((int)(((byte)(206)))));
             this.mainScreen_password.Location = new System.Drawing.Point(16, 189);
-            this.mainScreen_password.Multiline = true;
             this.mainScreen_password.Name = "mainScreen_password";
-            this.mainScreen_password.Size = new System.Drawing.Size(405, 48);
+            this.mainScreen_password.PasswordChar = '*';
+            this.mainScreen_password.Size = new System.Drawing.Size(405, 38);
             this.mainScreen_password.TabIndex = 24;
             this.mainScreen_password.WaterMark = "Password";
             this.mainScreen_password.WaterMarkActiveForeColor = System.Drawing.Color.Silver;
