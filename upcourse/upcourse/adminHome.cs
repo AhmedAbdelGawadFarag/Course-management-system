@@ -19,7 +19,8 @@ namespace upcourse
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
-
+            adminAddCourse ac = new adminAddCourse();
+            ac.ShowDialog();
         }
 
         private void adminHome_Load(object sender, EventArgs e)

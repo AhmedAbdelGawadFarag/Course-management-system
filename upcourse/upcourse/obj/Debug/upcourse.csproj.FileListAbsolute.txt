@@ -60,3 +60,4 @@ F:\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.trainerFormCour
 F:\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.trainerFormHome.resources
 F:\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.trainerFormProgress.resources
 F:\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.trainerFormSearch.resources
+F:\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.adminAddCourse.resources
