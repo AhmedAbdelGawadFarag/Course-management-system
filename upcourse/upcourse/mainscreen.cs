@@ -38,20 +38,23 @@ namespace upcourse
             //try
             //{
 
-                // modify it to your server and db name
-
-
+            // modify it to your server and db name
+            if (txtUsername=="admin"&&txtPassword=="admin") {
+                adminForm AdminPage = new adminForm();
+                AdminPage.ShowDialog();
+            }
+            else {
 
                 string checkCredentials = "Select * from Trainee Where UserName = '" + mainScreen_username.Text + "' and Pass = '" + mainScreen_password.Text.Trim() + "'";
                 SqlCommand CheckTrainee = new SqlCommand(checkCredentials, Program.dbconnection);
                 SqlDataReader TraineeData = CheckTrainee.ExecuteReader();
-              
+
 
                 if (TraineeData.HasRows)
                 {
                     MessageBox.Show("Successsful Trainee Login !");
                     TraineeData.Read();
-                   UserId=TraineeData.GetInt32(0);
+                    UserId = TraineeData.GetInt32(0);
                     TraineeData.Close();
                     Console.WriteLine(UserId.ToString());
                     userForm objuserForm = new userForm();
@@ -59,29 +62,29 @@ namespace upcourse
                     objuserForm.Show();
 
                 }
-                else  
-                {
-                TraineeData.Close();
-                string checkCredentialsTrainer = "Select * from Trainer Where UserName = '" + mainScreen_username.Text + "' and Password = '" + mainScreen_password.Text.Trim() + "'";
-                SqlCommand CheckTrainer = new SqlCommand(checkCredentialsTrainer, Program.dbconnection);
-                SqlDataReader TrainerData = CheckTrainer.ExecuteReader();
-                if (TrainerData.HasRows)
-                {
-                        TrainerData.Read();
-                    MessageBox.Show("Successsful Trainer Login !");
-                        UserId = TrainerData.GetInt32(0);
-                }
                 else
                 {
+                    TraineeData.Close();
+                    string checkCredentialsTrainer = "Select * from Trainer Where UserName = '" + mainScreen_username.Text + "' and Password = '" + mainScreen_password.Text.Trim() + "'";
+                    SqlCommand CheckTrainer = new SqlCommand(checkCredentialsTrainer, Program.dbconnection);
+                    SqlDataReader TrainerData = CheckTrainer.ExecuteReader();
+                    if (TrainerData.HasRows)
+                    {
+                        TrainerData.Read();
+                        MessageBox.Show("Successsful Trainer Login !");
+                        UserId = TrainerData.GetInt32(0);
+                    }
+                    else
+                    {
 
-                    MessageBox.Show("Check your username and password \n");
+                        MessageBox.Show("Check your username and password \n");
+                    }
+
+
+                    TrainerData.Close();
+
                 }
-
-
-                TrainerData.Close();
-                   
-                }
-          
+            }
 
         //}
            // catch (Exception Ex)

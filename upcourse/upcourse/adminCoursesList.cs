@@ -21,7 +21,7 @@ namespace upcourse
             while (data.Read())
             {
                 AdminCoursePanel pnl = new AdminCoursePanel(data.GetInt32(0), data.GetString(3), data.GetString(5));
-                flowLayoutPanel1.Controls.Add(pnl);
+                CoursesPanel.Controls.Add(pnl);
                 cnt++;
                
             }

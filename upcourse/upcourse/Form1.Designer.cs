@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.mainForm_exitBtn = new System.Windows.Forms.PictureBox();
             this.mainForm_miniBtn = new System.Windows.Forms.PictureBox();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
@@ -38,8 +37,6 @@
             this.register21 = new upcourse.register2();
             this.register1 = new upcourse.register();
             this.mainscreen2 = new upcourse.mainscreen();
-            this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
             ((System.ComponentModel.ISupportInitialize)(this.mainForm_exitBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainForm_miniBtn)).BeginInit();
             this.SuspendLayout();
@@ -50,9 +47,10 @@
             this.mainForm_exitBtn.BackgroundImage = global::upcourse.Properties.Resources.icons8_x_lowercase_26;
             this.mainForm_exitBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.mainForm_exitBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.mainForm_exitBtn.Location = new System.Drawing.Point(967, 12);
+            this.mainForm_exitBtn.Location = new System.Drawing.Point(725, 10);
+            this.mainForm_exitBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.mainForm_exitBtn.Name = "mainForm_exitBtn";
-            this.mainForm_exitBtn.Size = new System.Drawing.Size(28, 24);
+            this.mainForm_exitBtn.Size = new System.Drawing.Size(21, 20);
             this.mainForm_exitBtn.TabIndex = 11;
             this.mainForm_exitBtn.TabStop = false;
             this.mainForm_exitBtn.Click += new System.EventHandler(this.mainForm_exitBtn_Click);
@@ -63,9 +61,10 @@
             this.mainForm_miniBtn.BackgroundImage = global::upcourse.Properties.Resources.icons8_horizontal_line_50;
             this.mainForm_miniBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.mainForm_miniBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.mainForm_miniBtn.Location = new System.Drawing.Point(924, 12);
+            this.mainForm_miniBtn.Location = new System.Drawing.Point(693, 10);
+            this.mainForm_miniBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.mainForm_miniBtn.Name = "mainForm_miniBtn";
-            this.mainForm_miniBtn.Size = new System.Drawing.Size(28, 24);
+            this.mainForm_miniBtn.Size = new System.Drawing.Size(21, 20);
             this.mainForm_miniBtn.TabIndex = 12;
             this.mainForm_miniBtn.TabStop = false;
             this.mainForm_miniBtn.Click += new System.EventHandler(this.mainForm_miniBtn_Click);
@@ -85,26 +84,28 @@
             // register31
             // 
             this.register31.BackColor = System.Drawing.Color.White;
-            this.register31.Location = new System.Drawing.Point(0, 112);
+            this.register31.Location = new System.Drawing.Point(0, 91);
+            this.register31.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.register31.Name = "register31";
-            this.register31.Size = new System.Drawing.Size(466, 462);
+            this.register31.Size = new System.Drawing.Size(350, 375);
             this.register31.TabIndex = 16;
             // 
             // register21
             // 
             this.register21.BackColor = System.Drawing.Color.White;
-            this.register21.Location = new System.Drawing.Point(0, 112);
+            this.register21.Location = new System.Drawing.Point(0, 91);
+            this.register21.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.register21.Name = "register21";
-            this.register21.Size = new System.Drawing.Size(466, 462);
+            this.register21.Size = new System.Drawing.Size(350, 375);
             this.register21.TabIndex = 15;
             // 
             // register1
             // 
             this.register1.BackColor = System.Drawing.Color.White;
-            this.register1.Location = new System.Drawing.Point(0, 112);
-            this.register1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.register1.Location = new System.Drawing.Point(0, 91);
+            this.register1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.register1.Name = "register1";
-            this.register1.Size = new System.Drawing.Size(466, 462);
+            this.register1.Size = new System.Drawing.Size(350, 375);
             this.register1.TabIndex = 14;
             this.register1.Load += new System.EventHandler(this.register1_Load);
             // 
@@ -112,92 +113,19 @@
             // 
             this.mainscreen2.BackColor = System.Drawing.Color.White;
             this.mainscreen2.ForeColor = System.Drawing.Color.Gray;
-            this.mainscreen2.Location = new System.Drawing.Point(0, 112);
+            this.mainscreen2.Location = new System.Drawing.Point(0, 91);
+            this.mainscreen2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.mainscreen2.Name = "mainscreen2";
-            this.mainscreen2.Size = new System.Drawing.Size(466, 462);
+            this.mainscreen2.Size = new System.Drawing.Size(350, 375);
             this.mainscreen2.TabIndex = 13;
-            // 
-            // bunifuFlatButton1
-            // 
-            this.bunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton1.BorderRadius = 0;
-            this.bunifuFlatButton1.ButtonText = "TEST (dont delete it)";
-            this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton1.Iconimage")));
-            this.bunifuFlatButton1.Iconimage_right = null;
-            this.bunifuFlatButton1.Iconimage_right_Selected = null;
-            this.bunifuFlatButton1.Iconimage_Selected = null;
-            this.bunifuFlatButton1.IconMarginLeft = 0;
-            this.bunifuFlatButton1.IconMarginRight = 0;
-            this.bunifuFlatButton1.IconRightVisible = true;
-            this.bunifuFlatButton1.IconRightZoom = 0D;
-            this.bunifuFlatButton1.IconVisible = true;
-            this.bunifuFlatButton1.IconZoom = 90D;
-            this.bunifuFlatButton1.IsTab = false;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(642, 384);
-            this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.bunifuFlatButton1.Name = "bunifuFlatButton1";
-            this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.selected = false;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(321, 59);
-            this.bunifuFlatButton1.TabIndex = 17;
-            this.bunifuFlatButton1.Text = "TEST (dont delete it)";
-            this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuFlatButton1.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
-            // 
-            // bunifuFlatButton2
-            // 
-            this.bunifuFlatButton2.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton2.BorderRadius = 0;
-            this.bunifuFlatButton2.ButtonText = "TEST (dont delete it)";
-            this.bunifuFlatButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton2.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton2.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton2.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton2.Iconimage")));
-            this.bunifuFlatButton2.Iconimage_right = null;
-            this.bunifuFlatButton2.Iconimage_right_Selected = null;
-            this.bunifuFlatButton2.Iconimage_Selected = null;
-            this.bunifuFlatButton2.IconMarginLeft = 0;
-            this.bunifuFlatButton2.IconMarginRight = 0;
-            this.bunifuFlatButton2.IconRightVisible = true;
-            this.bunifuFlatButton2.IconRightZoom = 0D;
-            this.bunifuFlatButton2.IconVisible = true;
-            this.bunifuFlatButton2.IconZoom = 90D;
-            this.bunifuFlatButton2.IsTab = false;
-            this.bunifuFlatButton2.Location = new System.Drawing.Point(642, 451);
-            this.bunifuFlatButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.bunifuFlatButton2.Name = "bunifuFlatButton2";
-            this.bunifuFlatButton2.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton2.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.bunifuFlatButton2.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton2.selected = false;
-            this.bunifuFlatButton2.Size = new System.Drawing.Size(321, 59);
-            this.bunifuFlatButton2.TabIndex = 18;
-            this.bunifuFlatButton2.Text = "TEST (dont delete it)";
-            this.bunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuFlatButton2.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton2.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuFlatButton2.Click += new System.EventHandler(this.bunifuFlatButton2_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::upcourse.Properties.Resources.formBackground;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1007, 574);
-            this.Controls.Add(this.bunifuFlatButton2);
-            this.Controls.Add(this.bunifuFlatButton1);
+            this.ClientSize = new System.Drawing.Size(755, 466);
             this.Controls.Add(this.register31);
             this.Controls.Add(this.register21);
             this.Controls.Add(this.register1);
@@ -206,6 +134,7 @@
             this.Controls.Add(this.mainForm_exitBtn);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -225,8 +154,6 @@
         private register3 register31;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton2;
     }
 }
 

@@ -52,6 +52,7 @@ namespace upcourse
             DeleteCourse.ExecuteNonQuery();
             MessageBox.Show("Course deleted successfully\n");
             this.Hide();
+            
 
 
         }

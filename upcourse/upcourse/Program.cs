@@ -26,7 +26,7 @@ namespace upcourse
                 MessageBox.Show("Connection Open to database  ! ");
                
             }
-            catch (Exception e)
+            catch (Exception )
             {
                 
                 MessageBox.Show("Can not open connection to database ! ");
