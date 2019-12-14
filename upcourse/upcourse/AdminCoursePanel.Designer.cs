@@ -31,6 +31,7 @@
             this.CourseName = new System.Windows.Forms.Label();
             this.CourseDescription = new System.Windows.Forms.Label();
             this.DeleteButton = new System.Windows.Forms.Button();
+            this.ViewTraineeButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // CourseName
@@ -61,11 +62,22 @@
             this.DeleteButton.UseVisualStyleBackColor = true;
             this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
             // 
+            // ViewTraineeButton
+            // 
+            this.ViewTraineeButton.Location = new System.Drawing.Point(559, 68);
+            this.ViewTraineeButton.Name = "ViewTraineeButton";
+            this.ViewTraineeButton.Size = new System.Drawing.Size(119, 23);
+            this.ViewTraineeButton.TabIndex = 3;
+            this.ViewTraineeButton.Text = "ViewTrainee";
+            this.ViewTraineeButton.UseVisualStyleBackColor = true;
+            this.ViewTraineeButton.Click += new System.EventHandler(this.ViewTraineeButton_Click);
+            // 
             // AdminCoursePanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
+            this.Controls.Add(this.ViewTraineeButton);
             this.Controls.Add(this.DeleteButton);
             this.Controls.Add(this.CourseDescription);
             this.Controls.Add(this.CourseName);
@@ -81,5 +93,6 @@
         private System.Windows.Forms.Label CourseName;
         private System.Windows.Forms.Label CourseDescription;
         private System.Windows.Forms.Button DeleteButton;
+        private System.Windows.Forms.Button ViewTraineeButton;
     }
 }

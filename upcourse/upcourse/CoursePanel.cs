@@ -50,9 +50,12 @@ namespace upcourse
 
         private void RegisterButton_Click(object sender, EventArgs e)
         {
-            SqlCommand Register = new SqlCommand("insert into Traineecourse values(@UserId,null,null,@CourseId,null,null)",Program.dbconnection);
-            Register.Parameters.AddWithValue("UserId",mainscreen.GetUserID());
-            Register.Parameters.AddWithValue("CourseId", this.getCourseId());
+            SqlCommand Register = new SqlCommand("insert into Traineecourse values(@UserId,null,@CourseId,null,null)",Program.dbconnection);
+            Register.Parameters.AddWithValue("@UserId",mainscreen.GetUserID());
+            Register.Parameters.AddWithValue("@CourseId", this.getCourseId());
+            Console.WriteLine(mainscreen.GetUserID().ToString());
+            Console.WriteLine(this.getCourseId());
+
             Register.ExecuteNonQuery();
             
             MessageBox.Show(this.courseId.ToString());

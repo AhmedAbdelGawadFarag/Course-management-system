@@ -56,6 +56,18 @@ namespace upcourse
 
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ViewTraineeButton_Click(object sender, EventArgs e)
+        {
+            Form2 m = new Form2(getCourseId());
+            m.Show();
+            
+        }
     }
 
 }
