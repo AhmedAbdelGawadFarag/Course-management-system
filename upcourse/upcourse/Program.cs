@@ -9,8 +9,9 @@ namespace upcourse
 {
     static class Program
     {
-     public static string databaseString = "Data Source=DESKTOP-KHVRBGT\\SQLEXPRESS;Initial Catalog=Course Mangment System.bacpac;Integrated Security=True";
-
+        public static
+               //string databaseString = "Data Source=DESKTOP-KHVRBGT\\SQLEXPRESS;Initial Catalog=Course Mangment System.bacpac;Integrated Security=True";
+               string databaseString = "Server=(local);Database=Course Mangment System.bacpac;Trusted_Connection=True;";
      public static SqlConnection dbconnection = new SqlConnection(databaseString);
         /// <summary>
         /// The main entry point for the application.

@@ -140,6 +140,42 @@
     <Compile Include="TraineePanel.Designer.cs">
       <DependentUpon>TraineePanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="trainerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="trainerForm.Designer.cs">
+      <DependentUpon>trainerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="trainerFormCertificates.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="trainerFormCertificates.Designer.cs">
+      <DependentUpon>trainerFormCertificates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="trainerFormCourses.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="trainerFormCourses.Designer.cs">
+      <DependentUpon>trainerFormCourses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="trainerFormHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="trainerFormHome.Designer.cs">
+      <DependentUpon>trainerFormHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="trainerFormProgress.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="trainerFormProgress.Designer.cs">
+      <DependentUpon>trainerFormProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="trainerFormSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="trainerFormSearch.Designer.cs">
+      <DependentUpon>trainerFormSearch.cs</DependentUpon>
+    </Compile>
     <Compile Include="TrainersPanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -221,6 +257,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TraineePanel.resx">
       <DependentUpon>TraineePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="trainerForm.resx">
+      <DependentUpon>trainerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="trainerFormCertificates.resx">
+      <DependentUpon>trainerFormCertificates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="trainerFormCourses.resx">
+      <DependentUpon>trainerFormCourses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="trainerFormHome.resx">
+      <DependentUpon>trainerFormHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="trainerFormProgress.resx">
+      <DependentUpon>trainerFormProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="trainerFormSearch.resx">
+      <DependentUpon>trainerFormSearch.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TrainersPanel.resx">
       <DependentUpon>TrainersPanel.cs</DependentUpon>
