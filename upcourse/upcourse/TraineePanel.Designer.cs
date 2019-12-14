@@ -44,6 +44,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.TraineeQualificationLabel = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.DeleteButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // TraineeUserNameLabel
@@ -191,11 +192,22 @@
             this.label8.TabIndex = 5;
             this.label8.Text = "TraineeQualification:";
             // 
+            // DeleteButton
+            // 
+            this.DeleteButton.Location = new System.Drawing.Point(518, 199);
+            this.DeleteButton.Name = "DeleteButton";
+            this.DeleteButton.Size = new System.Drawing.Size(130, 23);
+            this.DeleteButton.TabIndex = 6;
+            this.DeleteButton.Text = "DeleteThisTrainee";
+            this.DeleteButton.UseVisualStyleBackColor = true;
+            this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
+            // 
             // TraineePanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
+            this.Controls.Add(this.DeleteButton);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.TraineeQualificationLabel);
             this.Controls.Add(this.label7);
@@ -237,5 +249,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label TraineeQualificationLabel;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button DeleteButton;
     }
 }
