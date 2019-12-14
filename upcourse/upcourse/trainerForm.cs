@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace upcourse
 {
@@ -15,6 +16,13 @@ namespace upcourse
         public trainerForm()
         {
             InitializeComponent();
+
+            trainerFormHome1.Visible = true;
+            trainerFormProgress1.Visible = false;
+            trainerFormSearch1.Visible = false;
+            trainerFormCertificates1.Visible = false;
+            trainerFormCourses1.Visible = false;
+
         }
 
         private void trainerForm_Load(object sender, EventArgs e)
@@ -27,11 +35,12 @@ namespace upcourse
             sidePnl.Top = btnHome.Top;
             sidePnl.Height = btnHome.Height;
 
+            trainerFormCourses1.Visible = false;
+            trainerFormProgress1.Visible = false;
+            trainerFormSearch1.Visible = false;
+            trainerFormCertificates1.Visible = false;
             animationHoriz.ShowSync(trainerFormHome1);
-            animationHoriz.HideSync(trainerFormCourses1);
-            animationHoriz.HideSync(trainerFormProgress1);
-            animationHoriz.HideSync(trainerFormCertificates1);
-            animationHoriz.HideSync(trainerFormSearch1);
+            
 
         }
 
@@ -39,12 +48,12 @@ namespace upcourse
         {
             sidePnl.Top = btnCourse.Top;
             sidePnl.Height = btnCourse.Height;
-
+trainerFormHome1.Visible = false;
+            trainerFormProgress1.Visible = false;
+            trainerFormSearch1.Visible = false;
+            trainerFormCertificates1.Visible = false;
             animationHoriz.ShowSync(trainerFormCourses1);
-            animationHoriz.HideSync(trainerFormHome1);
-            animationHoriz.HideSync(trainerFormProgress1);
-            animationHoriz.HideSync(trainerFormCertificates1);
-            animationHoriz.HideSync(trainerFormSearch1);
+            
         }
 
         private void btnProgress_Click(object sender, EventArgs e)
