@@ -74,8 +74,8 @@ namespace upcourse
             adminTrainee1.Visible = false;
             adminTrainers1.Visible = false;
             animationHoriz.ShowSync(adminCoursesList1);
+            this.adminCoursesList1.updateCoursesList();
 
-     
         }
 
         //trainers

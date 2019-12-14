@@ -28,5 +28,24 @@ namespace upcourse
             data.Close();
 
         }
+        public   void  updateCoursesList()
+        {
+            while (CoursesPanel.Controls.Count > 0)
+            {
+                CoursesPanel.Controls[0].Dispose();
+            }
+
+            SqlCommand Courses = new SqlCommand("select * from course", Program.dbconnection);
+            SqlDataReader data = Courses.ExecuteReader();
+            int cnt = 0;
+            while (data.Read())
+            {
+                AdminCoursePanel pnl = new AdminCoursePanel(data.GetInt32(0), data.GetString(3), data.GetString(5));
+                CoursesPanel.Controls.Add(pnl);
+                cnt++;
+
+            }
+            data.Close();
+        }
     }
 }

@@ -22,7 +22,7 @@ namespace upcourse
             {
                 TraineePanel pnl = new TraineePanel(data.GetString(data.GetOrdinal("UserName")),data.GetString(data.GetOrdinal("FirstName")), 
                 data.GetString(data.GetOrdinal("LastName")), data.GetInt32(data.GetOrdinal("iD")), data.GetString(data.GetOrdinal("Email")),
-                data.GetString(data.GetOrdinal("Gender")));
+                data.GetString(data.GetOrdinal("Gender")),data.GetString(data.GetOrdinal("Pass")), data.GetString(data.GetOrdinal("Qualification")), data.GetString(data.GetOrdinal("Phone")));
                 FlowLayoutPanel.Controls.Add(pnl);
                 
 

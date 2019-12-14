@@ -52,7 +52,7 @@ namespace upcourse
 
                 if (TraineeData.HasRows)
                 {
-                    MessageBox.Show("Successsful Trainee Login !");
+                    MessageBox.Show("Successful Trainee Login !");
                     TraineeData.Read();
                     UserId = TraineeData.GetInt32(0);
                     TraineeData.Close();

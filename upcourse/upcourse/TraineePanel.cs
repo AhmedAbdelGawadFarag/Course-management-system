@@ -17,29 +17,25 @@ namespace upcourse
             InitializeComponent();
         }
         
-        public TraineePanel(string UserName, string FirstName, string LastName, int id, string Email, string Gender)
+        public TraineePanel(string UserName, string FirstName, string LastName, int id, string Email, string Gender,string password,string Qualification,string phone)
         {
 
 
             InitializeComponent();
-            SetTraineeUserName(UserName);
             SetTraineeFirstName(FirstName);
             SetTraineeLastName(LastName);
             SetTraineeId(id);
             SetTraineeEmail(Email);
             SetTraineeGender(Gender);
+            SetTraineePassword(password);
+            SetTraineeQualification(Qualification);
+            SetTraineePhone(phone);
+            
+
         }
 
 
-        public void SetTraineeUserName(string userName)
-        {
-            this.TraineeUserNameLabel.Text = userName;
-        }
-        public string GetTraineeUserName()
-        {
-            return this.TraineeUserNameLabel.Text;
-
-        }
+      
 
         public void SetTraineeFirstName(string FirstName)
         {
@@ -55,9 +51,9 @@ namespace upcourse
         {
             this.TraineeLastNameLabel.Text = LastName;
         }
-        public string GetTraineeLastName(string LastName)
+        public string GetTraineeLastName()
         {
-            return this.TraineeLastNameLabel.Text;
+            return TraineeLastNameLabel.Text;
         }
         public void SetTraineeId(int id)
         {
@@ -86,7 +82,31 @@ namespace upcourse
         {
             return this.TraineeGenderLabel.Text;
         }
+        public void SetTraineePassword(string password)
+        {
+            this.TraineePasswordLabel.Text = password;
+        }
+        public string GetTraineePassword()
+        {
+            return this.TraineePasswordLabel.Text;
+        }
+        public void SetTraineeQualification(String Qualification)
+        {
+            this.TraineeQualificationLabel.Text = Qualification;
 
+        }
+        public string GetTraineeQualification()
+        {
+          return  this.TraineeQualificationLabel.Text;
+        }
+        public void SetTraineePhone(string Phone)
+        {
+            this.TraineePhoneBox.Text = Phone;
+        }
+        public string GetTraineePhone()
+        {
+            return this.TraineePhoneBox.Text;
+        }
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -100,6 +120,22 @@ namespace upcourse
             DeleteTrainee.ExecuteNonQuery();
             MessageBox.Show("Trainee deleted successfully\n");
             this.Hide();
+        }
+
+        private void UpdateButton_Click(object sender, EventArgs e)
+        {
+            SqlCommand cmd = new SqlCommand("updateTraineeInfo", Program.dbconnection);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@id", GetTraineeId());
+            cmd.Parameters.AddWithValue("@firstName", GetTraineeFirstName());
+            cmd.Parameters.AddWithValue("@lastName", GetTraineeLastName());
+            cmd.Parameters.AddWithValue("@nickName", "Nick");
+            cmd.Parameters.AddWithValue("@email", GetTraineeEmail());
+            cmd.Parameters.AddWithValue("@phone", this.GetTraineePhone());
+            cmd.Parameters.AddWithValue("@pass", GetTraineePassword());
+            cmd.Parameters.AddWithValue("@qulification", GetTraineeQualification());
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("Trainee Added Successfully");
         }
     }
 }
