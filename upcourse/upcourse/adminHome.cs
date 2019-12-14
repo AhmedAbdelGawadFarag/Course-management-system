@@ -16,5 +16,15 @@ namespace upcourse
         {
             InitializeComponent();
         }
+
+        private void bunifuThinButton21_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void adminHome_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
