@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(adminForm));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -62,18 +62,18 @@
             this.animationHoriz.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(279, 670);
+            this.panel1.Size = new System.Drawing.Size(209, 544);
             this.panel1.TabIndex = 4;
             // 
             // pictureBox1
             // 
             this.animationHoriz.SetDecoration(this.pictureBox1, BunifuAnimatorNS.DecorationType.None);
             this.pictureBox1.Image = global::upcourse.Properties.Resources.large_upcourse;
-            this.pictureBox1.Location = new System.Drawing.Point(25, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(19, 10);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(223, 116);
+            this.pictureBox1.Size = new System.Drawing.Size(167, 94);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
@@ -82,10 +82,9 @@
             // 
             this.SidePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
             this.animationHoriz.SetDecoration(this.SidePanel, BunifuAnimatorNS.DecorationType.None);
-            this.SidePanel.Location = new System.Drawing.Point(0, 150);
-            this.SidePanel.Margin = new System.Windows.Forms.Padding(4);
+            this.SidePanel.Location = new System.Drawing.Point(0, 122);
             this.SidePanel.Name = "SidePanel";
-            this.SidePanel.Size = new System.Drawing.Size(13, 66);
+            this.SidePanel.Size = new System.Drawing.Size(10, 54);
             this.SidePanel.TabIndex = 4;
             // 
             // button4
@@ -97,10 +96,9 @@
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(15, 347);
-            this.button4.Margin = new System.Windows.Forms.Padding(4);
+            this.button4.Location = new System.Drawing.Point(11, 282);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(263, 66);
+            this.button4.Size = new System.Drawing.Size(197, 54);
             this.button4.TabIndex = 4;
             this.button4.Text = "       Trainees";
             this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -116,10 +114,9 @@
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(15, 214);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
+            this.button3.Location = new System.Drawing.Point(11, 174);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(263, 66);
+            this.button3.Size = new System.Drawing.Size(197, 54);
             this.button3.TabIndex = 4;
             this.button3.Text = "       Courses List";
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -135,10 +132,9 @@
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(15, 281);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Location = new System.Drawing.Point(11, 228);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(263, 66);
+            this.button2.Size = new System.Drawing.Size(197, 54);
             this.button2.TabIndex = 4;
             this.button2.Text = "       Trainers";
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -154,10 +150,9 @@
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(15, 148);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Location = new System.Drawing.Point(11, 120);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(263, 66);
+            this.button1.Size = new System.Drawing.Size(197, 54);
             this.button1.TabIndex = 4;
             this.button1.Text = "       Home";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -169,10 +164,9 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
             this.animationHoriz.SetDecoration(this.panel2, BunifuAnimatorNS.DecorationType.None);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(279, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4);
+            this.panel2.Location = new System.Drawing.Point(209, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1044, 12);
+            this.panel2.Size = new System.Drawing.Size(783, 10);
             this.panel2.TabIndex = 28;
             // 
             // button11
@@ -183,10 +177,9 @@
             this.button11.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button11.ForeColor = System.Drawing.Color.White;
             this.button11.Image = ((System.Drawing.Image)(resources.GetObject("button11.Image")));
-            this.button11.Location = new System.Drawing.Point(1225, 16);
-            this.button11.Margin = new System.Windows.Forms.Padding(4);
+            this.button11.Location = new System.Drawing.Point(919, 13);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(23, 37);
+            this.button11.Size = new System.Drawing.Size(17, 30);
             this.button11.TabIndex = 33;
             this.button11.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button11.UseVisualStyleBackColor = true;
@@ -201,10 +194,9 @@
             this.button13.ForeColor = System.Drawing.Color.White;
             this.button13.Image = ((System.Drawing.Image)(resources.GetObject("button13.Image")));
             this.button13.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button13.Location = new System.Drawing.Point(1267, 13);
-            this.button13.Margin = new System.Windows.Forms.Padding(4);
+            this.button13.Location = new System.Drawing.Point(950, 11);
             this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(43, 43);
+            this.button13.Size = new System.Drawing.Size(32, 35);
             this.button13.TabIndex = 32;
             this.button13.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button13.UseVisualStyleBackColor = true;
@@ -214,61 +206,66 @@
             // 
             this.animationHoriz.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
             this.animationHoriz.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.animationHoriz.DefaultAnimation = animation1;
+            animation3.AnimateOnlyDifferences = true;
+            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
+            animation3.LeafCoeff = 0F;
+            animation3.MaxTime = 1F;
+            animation3.MinTime = 0F;
+            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
+            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
+            animation3.MosaicSize = 0;
+            animation3.Padding = new System.Windows.Forms.Padding(0);
+            animation3.RotateCoeff = 0F;
+            animation3.RotateLimit = 0F;
+            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
+            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
+            animation3.TimeCoeff = 0F;
+            animation3.TransparencyCoeff = 0F;
+            this.animationHoriz.DefaultAnimation = animation3;
             this.animationHoriz.TimeStep = 0.015F;
             // 
             // adminCoursesList1
             // 
             this.animationHoriz.SetDecoration(this.adminCoursesList1, BunifuAnimatorNS.DecorationType.None);
-            this.adminCoursesList1.Location = new System.Drawing.Point(279, 78);
+            this.adminCoursesList1.Location = new System.Drawing.Point(209, 63);
+            this.adminCoursesList1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.adminCoursesList1.Name = "adminCoursesList1";
-            this.adminCoursesList1.Size = new System.Drawing.Size(1044, 592);
+            this.adminCoursesList1.Size = new System.Drawing.Size(783, 481);
             this.adminCoursesList1.TabIndex = 34;
             // 
             // adminTrainee1
             // 
             this.animationHoriz.SetDecoration(this.adminTrainee1, BunifuAnimatorNS.DecorationType.None);
-            this.adminTrainee1.Location = new System.Drawing.Point(279, 78);
+            this.adminTrainee1.Location = new System.Drawing.Point(209, 63);
+            this.adminTrainee1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.adminTrainee1.Name = "adminTrainee1";
-            this.adminTrainee1.Size = new System.Drawing.Size(1044, 592);
+            this.adminTrainee1.Size = new System.Drawing.Size(783, 481);
             this.adminTrainee1.TabIndex = 35;
             // 
             // adminTrainers1
             // 
+            this.adminTrainers1.BackColor = System.Drawing.SystemColors.Control;
             this.animationHoriz.SetDecoration(this.adminTrainers1, BunifuAnimatorNS.DecorationType.None);
-            this.adminTrainers1.Location = new System.Drawing.Point(279, 78);
+            this.adminTrainers1.Location = new System.Drawing.Point(209, 63);
+            this.adminTrainers1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.adminTrainers1.Name = "adminTrainers1";
-            this.adminTrainers1.Size = new System.Drawing.Size(1044, 592);
+            this.adminTrainers1.Size = new System.Drawing.Size(783, 481);
             this.adminTrainers1.TabIndex = 36;
             // 
             // adminHome1
             // 
             this.animationHoriz.SetDecoration(this.adminHome1, BunifuAnimatorNS.DecorationType.None);
-            this.adminHome1.Location = new System.Drawing.Point(279, 78);
+            this.adminHome1.Location = new System.Drawing.Point(209, 48);
+            this.adminHome1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.adminHome1.Name = "adminHome1";
-            this.adminHome1.Size = new System.Drawing.Size(1044, 592);
+            this.adminHome1.Size = new System.Drawing.Size(783, 496);
             this.adminHome1.TabIndex = 37;
             // 
             // adminForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1323, 670);
+            this.ClientSize = new System.Drawing.Size(992, 544);
             this.Controls.Add(this.adminHome1);
             this.Controls.Add(this.adminTrainers1);
             this.Controls.Add(this.adminTrainee1);
@@ -279,6 +276,7 @@
             this.Controls.Add(this.panel1);
             this.animationHoriz.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "adminForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "adminForm";

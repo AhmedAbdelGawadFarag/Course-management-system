@@ -54,6 +54,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminCoursePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminCoursePanel.Designer.cs">
+      <DependentUpon>AdminCoursePanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="adminCoursesList.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -146,6 +152,9 @@
     <Compile Include="user_acc.Designer.cs">
       <DependentUpon>user_acc.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AdminCoursePanel.resx">
+      <DependentUpon>AdminCoursePanel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="adminCoursesList.resx">
       <DependentUpon>adminCoursesList.cs</DependentUpon>
     </EmbeddedResource>

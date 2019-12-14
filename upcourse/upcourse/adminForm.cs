@@ -16,6 +16,7 @@ namespace upcourse
         {
             InitializeComponent();
             adminHome1.BringToFront();
+            
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)

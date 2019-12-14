@@ -89,7 +89,7 @@ namespace upcourse
                         else
                         {
                             EmailData.Close();
-                            MessageBox.Show("Email exist");
+                            MessageBox.Show("Email or username exist");
 
                         }
 
