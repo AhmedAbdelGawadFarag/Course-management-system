@@ -49,3 +49,4 @@ C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\obj\D
 C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.pdb
 C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.csprojAssemblyReference.cache
 C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.TraineePanel.resources
+C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.TrainersPanel.resources
