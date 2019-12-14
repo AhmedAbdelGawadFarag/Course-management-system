@@ -66,7 +66,7 @@
             this.DeleteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.DeleteButton.ForeColor = System.Drawing.Color.White;
             this.DeleteButton.Location = new System.Drawing.Point(832, 121);
-            this.DeleteButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DeleteButton.Margin = new System.Windows.Forms.Padding(4);
             this.DeleteButton.Name = "DeleteButton";
             this.DeleteButton.Size = new System.Drawing.Size(173, 54);
             this.DeleteButton.TabIndex = 2;
@@ -81,7 +81,7 @@
             this.ViewTraineeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ViewTraineeButton.ForeColor = System.Drawing.Color.White;
             this.ViewTraineeButton.Location = new System.Drawing.Point(832, 25);
-            this.ViewTraineeButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ViewTraineeButton.Margin = new System.Windows.Forms.Padding(4);
             this.ViewTraineeButton.Name = "ViewTraineeButton";
             this.ViewTraineeButton.Size = new System.Drawing.Size(173, 54);
             this.ViewTraineeButton.TabIndex = 3;
@@ -108,9 +108,9 @@
             this.Controls.Add(this.DeleteButton);
             this.Controls.Add(this.CourseDescription);
             this.Controls.Add(this.CourseName);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AdminCoursePanel";
-            this.Size = new System.Drawing.Size(1044, 217);
+            this.Size = new System.Drawing.Size(1033, 217);
             this.Load += new System.EventHandler(this.AdminCoursePanel_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
