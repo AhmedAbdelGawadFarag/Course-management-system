@@ -68,6 +68,11 @@ namespace upcourse
             m.Show();
             
         }
+
+        private void AdminCoursePanel_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }
