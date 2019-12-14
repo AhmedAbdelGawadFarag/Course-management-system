@@ -35,6 +35,12 @@ namespace upcourse
         {
             return UserName;
         }
+
+        private void register_username_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
         public static string getEmail()
         {
             return Email;

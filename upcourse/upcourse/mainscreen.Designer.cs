@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainscreen));
             this.mainScreen_forgetBtn = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.mainScreen_checkBtn = new System.Windows.Forms.CheckBox();
@@ -42,6 +44,7 @@
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.mainScreen_username = new ChreneLib.Controls.TextBoxes.CTextBox();
             this.mainScreen_password = new ChreneLib.Controls.TextBoxes.CTextBox();
+            this.bunifuTransition1 = new BunifuAnimatorNS.BunifuTransition(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.mainScreen_google)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainScreen_twit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainScreen_fb)).BeginInit();
@@ -52,6 +55,7 @@
             this.mainScreen_forgetBtn.AutoSize = true;
             this.mainScreen_forgetBtn.BackColor = System.Drawing.Color.White;
             this.mainScreen_forgetBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.mainScreen_forgetBtn, BunifuAnimatorNS.DecorationType.None);
             this.mainScreen_forgetBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mainScreen_forgetBtn.ForeColor = System.Drawing.Color.DimGray;
             this.mainScreen_forgetBtn.Location = new System.Drawing.Point(261, 256);
@@ -65,6 +69,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.bunifuTransition1.SetDecoration(this.label3, BunifuAnimatorNS.DecorationType.None);
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.DimGray;
             this.label3.Location = new System.Drawing.Point(13, 403);
@@ -78,6 +83,7 @@
             this.mainScreen_checkBtn.AutoSize = true;
             this.mainScreen_checkBtn.BackColor = System.Drawing.Color.White;
             this.mainScreen_checkBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.mainScreen_checkBtn, BunifuAnimatorNS.DecorationType.None);
             this.mainScreen_checkBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mainScreen_checkBtn.ForeColor = System.Drawing.Color.DimGray;
             this.mainScreen_checkBtn.Location = new System.Drawing.Point(17, 254);
@@ -91,6 +97,7 @@
             // 
             this.mainScreen_loginBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(51)))), ((int)(((byte)(206)))));
             this.mainScreen_loginBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.mainScreen_loginBtn, BunifuAnimatorNS.DecorationType.None);
             this.mainScreen_loginBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.mainScreen_loginBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mainScreen_loginBtn.ForeColor = System.Drawing.Color.White;
@@ -107,6 +114,7 @@
             this.mainScreen_create.AutoSize = true;
             this.mainScreen_create.BackColor = System.Drawing.Color.White;
             this.mainScreen_create.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.mainScreen_create, BunifuAnimatorNS.DecorationType.None);
             this.mainScreen_create.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mainScreen_create.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(51)))), ((int)(((byte)(206)))));
             this.mainScreen_create.Location = new System.Drawing.Point(208, 68);
@@ -120,6 +128,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
+            this.bunifuTransition1.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Gray;
             this.label1.Location = new System.Drawing.Point(13, 68);
@@ -134,6 +143,7 @@
             this.mainScreen_google.BackgroundImage = global::upcourse.Properties.Resources.iconfinder_google_circle_294707;
             this.mainScreen_google.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.mainScreen_google.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.mainScreen_google, BunifuAnimatorNS.DecorationType.None);
             this.mainScreen_google.Location = new System.Drawing.Point(324, 387);
             this.mainScreen_google.Name = "mainScreen_google";
             this.mainScreen_google.Size = new System.Drawing.Size(66, 66);
@@ -146,6 +156,7 @@
             this.mainScreen_twit.BackgroundImage = global::upcourse.Properties.Resources.iconfinder_twitter_circle_294709;
             this.mainScreen_twit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.mainScreen_twit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.mainScreen_twit, BunifuAnimatorNS.DecorationType.None);
             this.mainScreen_twit.Location = new System.Drawing.Point(235, 387);
             this.mainScreen_twit.Name = "mainScreen_twit";
             this.mainScreen_twit.Size = new System.Drawing.Size(66, 66);
@@ -158,6 +169,7 @@
             this.mainScreen_fb.BackgroundImage = global::upcourse.Properties.Resources.iconfinder_facebook_circle_294710;
             this.mainScreen_fb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.mainScreen_fb.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.mainScreen_fb, BunifuAnimatorNS.DecorationType.None);
             this.mainScreen_fb.Location = new System.Drawing.Point(143, 387);
             this.mainScreen_fb.Name = "mainScreen_fb";
             this.mainScreen_fb.Size = new System.Drawing.Size(68, 66);
@@ -167,6 +179,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DimGray;
             this.label2.Location = new System.Drawing.Point(10, 15);
@@ -182,6 +195,7 @@
             // 
             // mainScreen_username
             // 
+            this.bunifuTransition1.SetDecoration(this.mainScreen_username, BunifuAnimatorNS.DecorationType.None);
             this.mainScreen_username.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
             this.mainScreen_username.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(51)))), ((int)(((byte)(206)))));
             this.mainScreen_username.Location = new System.Drawing.Point(18, 125);
@@ -197,18 +211,40 @@
             // 
             // mainScreen_password
             // 
+            this.bunifuTransition1.SetDecoration(this.mainScreen_password, BunifuAnimatorNS.DecorationType.None);
             this.mainScreen_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
             this.mainScreen_password.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(51)))), ((int)(((byte)(206)))));
             this.mainScreen_password.Location = new System.Drawing.Point(16, 189);
-            this.mainScreen_password.Multiline = true;
             this.mainScreen_password.Name = "mainScreen_password";
-            this.mainScreen_password.Size = new System.Drawing.Size(405, 48);
+            this.mainScreen_password.PasswordChar = '*';
+            this.mainScreen_password.Size = new System.Drawing.Size(405, 38);
             this.mainScreen_password.TabIndex = 24;
             this.mainScreen_password.WaterMark = "Password";
             this.mainScreen_password.WaterMarkActiveForeColor = System.Drawing.Color.Silver;
             this.mainScreen_password.WaterMarkFont = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
             this.mainScreen_password.WaterMarkForeColor = System.Drawing.Color.Silver;
             this.mainScreen_password.TextChanged += new System.EventHandler(this.mainScreen_password_TextChanged);
+            // 
+            // bunifuTransition1
+            // 
+            this.bunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.VertSlide;
+            this.bunifuTransition1.Cursor = null;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.bunifuTransition1.DefaultAnimation = animation1;
             // 
             // mainscreen
             // 
@@ -227,6 +263,7 @@
             this.Controls.Add(this.mainScreen_loginBtn);
             this.Controls.Add(this.mainScreen_create);
             this.Controls.Add(this.label1);
+            this.bunifuTransition1.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.ForeColor = System.Drawing.Color.Gray;
             this.Name = "mainscreen";
             this.Size = new System.Drawing.Size(466, 462);
@@ -254,5 +291,6 @@
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private ChreneLib.Controls.TextBoxes.CTextBox mainScreen_username;
         private ChreneLib.Controls.TextBoxes.CTextBox mainScreen_password;
+        private BunifuAnimatorNS.BunifuTransition bunifuTransition1;
     }
 }

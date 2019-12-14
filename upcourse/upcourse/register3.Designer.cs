@@ -50,18 +50,22 @@
             // 
             // register3_pass
             // 
+            this.register3_pass.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
+            this.register3_pass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(51)))), ((int)(((byte)(206)))));
             this.register3_pass.Location = new System.Drawing.Point(198, 13);
-            this.register3_pass.Multiline = true;
             this.register3_pass.Name = "register3_pass";
-            this.register3_pass.Size = new System.Drawing.Size(260, 39);
+            this.register3_pass.PasswordChar = '*';
+            this.register3_pass.Size = new System.Drawing.Size(260, 38);
             this.register3_pass.TabIndex = 26;
             // 
             // register3_rePass
             // 
+            this.register3_rePass.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
+            this.register3_rePass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(51)))), ((int)(((byte)(206)))));
             this.register3_rePass.Location = new System.Drawing.Point(198, 77);
-            this.register3_rePass.Multiline = true;
             this.register3_rePass.Name = "register3_rePass";
-            this.register3_rePass.Size = new System.Drawing.Size(260, 39);
+            this.register3_rePass.PasswordChar = '*';
+            this.register3_rePass.Size = new System.Drawing.Size(260, 38);
             this.register3_rePass.TabIndex = 28;
             // 
             // label1

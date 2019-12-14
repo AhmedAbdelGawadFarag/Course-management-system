@@ -34,14 +34,13 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::upcourse.Properties.Resources._9_98660_svg_transparent_stock_innovation_courses_workshops_did_you;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(360, 30);
+            this.pictureBox1.Image = global::upcourse.Properties.Resources.giphy;
+            this.pictureBox1.Location = new System.Drawing.Point(285, 17);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(525, 346);
+            this.pictureBox1.Size = new System.Drawing.Size(691, 390);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // UserFormHome
             // 

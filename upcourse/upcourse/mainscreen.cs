@@ -26,7 +26,7 @@ namespace upcourse
             register register = new register();
             this.Controls.Add(register);
             register.Dock = DockStyle.Fill;
-            register.BringToFront();
+             register.BringToFront();
         }
 
 

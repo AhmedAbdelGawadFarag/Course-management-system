@@ -355,5 +355,8 @@
   <ItemGroup>
     <None Include="Resources\images %282%29.jfif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giphy.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
