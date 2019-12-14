@@ -71,17 +71,20 @@ namespace upcourse
                     if (TrainerData.HasRows)
                     {
                         TrainerData.Read();
-                        MessageBox.Show("Successsful Trainer Login !");
                         UserId = TrainerData.GetInt32(0);
+                        TrainerData.Close();
+                        trainerForm objuserForm = new trainerForm();
+                        this.Hide();
+                        objuserForm.Show();
                     }
                     else
                     {
-
+                        TrainerData.Close();
                         MessageBox.Show("Check your username and password \n");
                     }
 
 
-                    TrainerData.Close();
+                  
 
                 }
             }
