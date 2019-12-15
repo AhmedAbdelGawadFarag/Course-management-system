@@ -117,3 +117,6 @@ C:\Users\Ahmed\Documents\GitHub\Course-management-system\upcourse\upcourse\obj\D
 F:\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.adminCourseAssign.resources
 F:\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.userFormMyCourses.resources
 F:\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.userFormProgress.resources
+C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.adminCourseAssign.resources
+C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.userFormMyCourses.resources
+C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.userFormProgress.resources
