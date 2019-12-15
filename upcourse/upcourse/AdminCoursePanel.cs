@@ -69,9 +69,20 @@ namespace upcourse
             
         }
 
-        private void AdminCoursePanel_Load(object sender, EventArgs e)
+        private void assignTrainerButton_Click(object sender, EventArgs e)
         {
+          
+        }
 
+        private void assignTrainerButton_Click_1(object sender, EventArgs e)
+        {
+            adminCourseAssign assign = new adminCourseAssign();
+
+            assign.setCourseId(this.courseId);
+            assign.updateCombo();
+            this.Controls.Add(assign);
+            assign.Show();
+            assign.BringToFront();
         }
     }
 

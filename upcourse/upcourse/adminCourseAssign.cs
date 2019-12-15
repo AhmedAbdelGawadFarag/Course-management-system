@@ -26,7 +26,9 @@ namespace upcourse
         public void updateCombo()
         {
             this.trainerCombo.Items.Clear();
-            SqlCommand cmd = new SqlCommand("select ID,firstName,LastName from trainer", Program.dbconnection);
+            SqlCommand cmd = new SqlCommand("getTrainerNotInCourse", Program.dbconnection);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@courseID", this.courseID);
             SqlDataReader data = cmd.ExecuteReader();
             while(data.Read())
             {
@@ -37,12 +39,14 @@ namespace upcourse
         }
         private void assignButton_Click(object sender, EventArgs e)
         {
+
             SqlCommand cmd = new SqlCommand("insert into CourseTrainer values(@TrainerID,@CourseID)",Program.dbconnection);
             cmd.Parameters.AddWithValue("CourseID", this.courseID);
             string cid = this.trainerCombo.SelectedItem.ToString().Substring (this.trainerCombo.SelectedItem.ToString().IndexOf('-') + 1);
             cmd.Parameters.AddWithValue("TrainerID", cid);
 
             cmd.ExecuteNonQuery();
+            this.Hide();
         }
 
         private void cancelButton_Click(object sender, EventArgs e)

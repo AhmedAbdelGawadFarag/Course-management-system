@@ -112,3 +112,5 @@ F:\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.csproj.CoreComp
 F:\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.csproj.CopyComplete
 F:\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.exe
 F:\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.pdb
+C:\Users\Ahmed\Documents\GitHub\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.csprojAssemblyReference.cache
+C:\Users\Ahmed\Documents\GitHub\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.adminCourseAssign.resources
