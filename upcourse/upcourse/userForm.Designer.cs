@@ -53,19 +53,10 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.CoursesLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.animationLeaf = new BunifuAnimatorNS.BunifuTransition(this.components);
-            this.animationHoriz = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.bunifuFlatButton6 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton5 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton4 = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -73,19 +64,29 @@
             this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.CoursesLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.animationLeaf = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.animationHoriz = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.user_acc1 = new upcourse.user_acc();
             this.userFormHome1 = new upcourse.UserFormHome();
+            this.userFormProgress1 = new upcourse.userFormProgress();
+            this.userFormMyCourses1 = new upcourse.userFormMyCourses();
             this.menu.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel9.SuspendLayout();
-            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -231,7 +232,6 @@
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(30)))), ((int)(((byte)(20)))));
             this.panel5.Controls.Add(this.button3);
             this.panel5.Controls.Add(this.button2);
-            this.panel5.Controls.Add(this.button1);
             this.panel5.Controls.Add(this.label1);
             this.animationHoriz.SetDecoration(this.panel5, BunifuAnimatorNS.DecorationType.None);
             this.animationLeaf.SetDecoration(this.panel5, BunifuAnimatorNS.DecorationType.None);
@@ -271,7 +271,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(432, 9);
+            this.button2.Location = new System.Drawing.Point(225, 9);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(180, 41);
@@ -279,25 +279,6 @@
             this.button2.Text = "Account";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(30)))), ((int)(((byte)(20)))));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.animationLeaf.SetDecoration(this.button1, BunifuAnimatorNS.DecorationType.None);
-            this.animationHoriz.SetDecoration(this.button1, BunifuAnimatorNS.DecorationType.None);
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(221, 9);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(179, 41);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Home";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -361,132 +342,6 @@
             this.panel9.TabIndex = 12;
             this.panel9.Visible = false;
             this.panel9.Paint += new System.Windows.Forms.PaintEventHandler(this.panel9_Paint);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.animationLeaf.SetDecoration(this.label4, BunifuAnimatorNS.DecorationType.None);
-            this.animationHoriz.SetDecoration(this.label4, BunifuAnimatorNS.DecorationType.None);
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(23, 679);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(153, 20);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Copyright @2019";
-            // 
-            // panel4
-            // 
-            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(30)))), ((int)(((byte)(20)))));
-            this.panel4.Controls.Add(this.CoursesLayoutPanel);
-            this.animationHoriz.SetDecoration(this.panel4, BunifuAnimatorNS.DecorationType.None);
-            this.animationLeaf.SetDecoration(this.panel4, BunifuAnimatorNS.DecorationType.None);
-            this.panel4.Location = new System.Drawing.Point(0, 89);
-            this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(208, 7);
-            this.panel4.TabIndex = 13;
-            // 
-            // CoursesLayoutPanel
-            // 
-            this.CoursesLayoutPanel.AutoScroll = true;
-            this.CoursesLayoutPanel.AutoSize = true;
-            this.animationHoriz.SetDecoration(this.CoursesLayoutPanel, BunifuAnimatorNS.DecorationType.None);
-            this.animationLeaf.SetDecoration(this.CoursesLayoutPanel, BunifuAnimatorNS.DecorationType.None);
-            this.CoursesLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CoursesLayoutPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.CoursesLayoutPanel.Location = new System.Drawing.Point(0, 0);
-            this.CoursesLayoutPanel.Margin = new System.Windows.Forms.Padding(4);
-            this.CoursesLayoutPanel.Name = "CoursesLayoutPanel";
-            this.CoursesLayoutPanel.Size = new System.Drawing.Size(208, 7);
-            this.CoursesLayoutPanel.TabIndex = 21;
-            this.CoursesLayoutPanel.WrapContents = false;
-            this.CoursesLayoutPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.CoursesLayoutPanel_Paint);
-            // 
-            // panel6
-            // 
-            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(30)))), ((int)(((byte)(20)))));
-            this.animationHoriz.SetDecoration(this.panel6, BunifuAnimatorNS.DecorationType.None);
-            this.animationLeaf.SetDecoration(this.panel6, BunifuAnimatorNS.DecorationType.None);
-            this.panel6.Location = new System.Drawing.Point(208, 89);
-            this.panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(208, 7);
-            this.panel6.TabIndex = 14;
-            // 
-            // panel1
-            // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(30)))), ((int)(((byte)(20)))));
-            this.animationHoriz.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
-            this.animationLeaf.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
-            this.panel1.Location = new System.Drawing.Point(416, 89);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(208, 7);
-            this.panel1.TabIndex = 15;
-            // 
-            // panel7
-            // 
-            this.panel7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(30)))), ((int)(((byte)(20)))));
-            this.animationHoriz.SetDecoration(this.panel7, BunifuAnimatorNS.DecorationType.None);
-            this.animationLeaf.SetDecoration(this.panel7, BunifuAnimatorNS.DecorationType.None);
-            this.panel7.Location = new System.Drawing.Point(624, 89);
-            this.panel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(880, 7);
-            this.panel7.TabIndex = 16;
-            // 
-            // animationLeaf
-            // 
-            this.animationLeaf.AnimationType = BunifuAnimatorNS.AnimationType.Leaf;
-            this.animationLeaf.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 1F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(0);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 0F;
-            animation2.TransparencyCoeff = 0F;
-            this.animationLeaf.DefaultAnimation = animation2;
-            this.animationLeaf.TimeStep = 0.015F;
-            // 
-            // animationHoriz
-            // 
-            this.animationHoriz.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
-            this.animationHoriz.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.animationHoriz.DefaultAnimation = animation1;
-            this.animationHoriz.TimeStep = 0.015F;
             // 
             // bunifuFlatButton6
             // 
@@ -611,7 +466,7 @@
             this.bunifuFlatButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.bunifuFlatButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuFlatButton3.BorderRadius = 0;
-            this.bunifuFlatButton3.ButtonText = "Categories";
+            this.bunifuFlatButton3.ButtonText = "All Courses";
             this.bunifuFlatButton3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.animationHoriz.SetDecoration(this.bunifuFlatButton3, BunifuAnimatorNS.DecorationType.None);
             this.animationLeaf.SetDecoration(this.bunifuFlatButton3, BunifuAnimatorNS.DecorationType.None);
@@ -638,7 +493,7 @@
             this.bunifuFlatButton3.selected = false;
             this.bunifuFlatButton3.Size = new System.Drawing.Size(208, 60);
             this.bunifuFlatButton3.TabIndex = 19;
-            this.bunifuFlatButton3.Text = "Categories";
+            this.bunifuFlatButton3.Text = "All Courses";
             this.bunifuFlatButton3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuFlatButton3.Textcolor = System.Drawing.Color.WhiteSmoke;
             this.bunifuFlatButton3.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -735,6 +590,112 @@
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.animationLeaf.SetDecoration(this.label4, BunifuAnimatorNS.DecorationType.None);
+            this.animationHoriz.SetDecoration(this.label4, BunifuAnimatorNS.DecorationType.None);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(23, 679);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(153, 20);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Copyright @2019";
+            // 
+            // panel4
+            // 
+            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(30)))), ((int)(((byte)(20)))));
+            this.panel4.Controls.Add(this.CoursesLayoutPanel);
+            this.animationHoriz.SetDecoration(this.panel4, BunifuAnimatorNS.DecorationType.None);
+            this.animationLeaf.SetDecoration(this.panel4, BunifuAnimatorNS.DecorationType.None);
+            this.panel4.Location = new System.Drawing.Point(0, 89);
+            this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(208, 7);
+            this.panel4.TabIndex = 13;
+            // 
+            // CoursesLayoutPanel
+            // 
+            this.CoursesLayoutPanel.AutoScroll = true;
+            this.CoursesLayoutPanel.AutoSize = true;
+            this.animationHoriz.SetDecoration(this.CoursesLayoutPanel, BunifuAnimatorNS.DecorationType.None);
+            this.animationLeaf.SetDecoration(this.CoursesLayoutPanel, BunifuAnimatorNS.DecorationType.None);
+            this.CoursesLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CoursesLayoutPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.CoursesLayoutPanel.Location = new System.Drawing.Point(0, 0);
+            this.CoursesLayoutPanel.Margin = new System.Windows.Forms.Padding(4);
+            this.CoursesLayoutPanel.Name = "CoursesLayoutPanel";
+            this.CoursesLayoutPanel.Size = new System.Drawing.Size(208, 7);
+            this.CoursesLayoutPanel.TabIndex = 21;
+            this.CoursesLayoutPanel.WrapContents = false;
+            this.CoursesLayoutPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.CoursesLayoutPanel_Paint);
+            // 
+            // panel6
+            // 
+            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(30)))), ((int)(((byte)(20)))));
+            this.animationHoriz.SetDecoration(this.panel6, BunifuAnimatorNS.DecorationType.None);
+            this.animationLeaf.SetDecoration(this.panel6, BunifuAnimatorNS.DecorationType.None);
+            this.panel6.Location = new System.Drawing.Point(416, 89);
+            this.panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(208, 7);
+            this.panel6.TabIndex = 14;
+            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(30)))), ((int)(((byte)(20)))));
+            this.animationHoriz.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
+            this.animationLeaf.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
+            this.panel1.Location = new System.Drawing.Point(208, 89);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(208, 7);
+            this.panel1.TabIndex = 15;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // panel7
+            // 
+            this.panel7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(30)))), ((int)(((byte)(20)))));
+            this.animationHoriz.SetDecoration(this.panel7, BunifuAnimatorNS.DecorationType.None);
+            this.animationLeaf.SetDecoration(this.panel7, BunifuAnimatorNS.DecorationType.None);
+            this.panel7.Location = new System.Drawing.Point(624, 89);
+            this.panel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(880, 7);
+            this.panel7.TabIndex = 16;
+            // 
+            // animationLeaf
+            // 
+            this.animationLeaf.AnimationType = BunifuAnimatorNS.AnimationType.Leaf;
+            this.animationLeaf.Cursor = null;
+            animation2.AnimateOnlyDifferences = true;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 1F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 0;
+            animation2.Padding = new System.Windows.Forms.Padding(0);
+            animation2.RotateCoeff = 0F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 0F;
+            this.animationLeaf.DefaultAnimation = animation2;
+            this.animationLeaf.TimeStep = 0.015F;
+            // 
             // panel3
             // 
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -808,6 +769,28 @@
             this.pictureBox2.TabIndex = 23;
             this.pictureBox2.TabStop = false;
             // 
+            // animationHoriz
+            // 
+            this.animationHoriz.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
+            this.animationHoriz.Cursor = null;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.animationHoriz.DefaultAnimation = animation1;
+            this.animationHoriz.TimeStep = 0.015F;
+            // 
             // user_acc1
             // 
             this.user_acc1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
@@ -829,6 +812,26 @@
             this.userFormHome1.Size = new System.Drawing.Size(1295, 657);
             this.userFormHome1.TabIndex = 25;
             // 
+            // userFormProgress1
+            // 
+            this.userFormProgress1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.animationLeaf.SetDecoration(this.userFormProgress1, BunifuAnimatorNS.DecorationType.None);
+            this.animationHoriz.SetDecoration(this.userFormProgress1, BunifuAnimatorNS.DecorationType.None);
+            this.userFormProgress1.Location = new System.Drawing.Point(209, 96);
+            this.userFormProgress1.Name = "userFormProgress1";
+            this.userFormProgress1.Size = new System.Drawing.Size(1295, 657);
+            this.userFormProgress1.TabIndex = 27;
+            // 
+            // userFormMyCourses1
+            // 
+            this.userFormMyCourses1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.animationLeaf.SetDecoration(this.userFormMyCourses1, BunifuAnimatorNS.DecorationType.None);
+            this.animationHoriz.SetDecoration(this.userFormMyCourses1, BunifuAnimatorNS.DecorationType.None);
+            this.userFormMyCourses1.Location = new System.Drawing.Point(209, 96);
+            this.userFormMyCourses1.Name = "userFormMyCourses1";
+            this.userFormMyCourses1.Size = new System.Drawing.Size(1295, 657);
+            this.userFormMyCourses1.TabIndex = 28;
+            // 
             // userForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -836,6 +839,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1503, 807);
+            this.Controls.Add(this.userFormMyCourses1);
+            this.Controls.Add(this.userFormProgress1);
             this.Controls.Add(this.user_acc1);
             this.Controls.Add(this.userFormHome1);
             this.Controls.Add(this.label3);
@@ -867,9 +872,9 @@
             this.panel11.PerformLayout();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -899,7 +904,6 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
@@ -926,5 +930,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private UserFormHome userFormHome1;
         private user_acc user_acc1;
+        private userFormProgress userFormProgress1;
+        private userFormMyCourses userFormMyCourses1;
     }
 }

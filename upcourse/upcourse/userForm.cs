@@ -22,6 +22,8 @@ namespace upcourse
             user_acc1.Visible = false;
             CoursesLayoutPanel.Visible = false;
             userFormHome1.Visible = false;
+            userFormProgress1.Visible = false;
+            userFormMyCourses1.Visible = false;
             //----------------------------------------------colors----------------------------------------------------------------------------
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(30)))), ((int)(((byte)(20)))));
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(179)))), ((int)(((byte)(70)))));
@@ -48,13 +50,16 @@ namespace upcourse
 
         }
 
-        //category
+        //all courses done
         private void bunifuFlatButton3_Click(object sender, EventArgs e)
         {
-            panel9.Visible = true;
-            userFormHome1.Visible = true;
-            animationHoriz.ShowSync(CoursesLayoutPanel);
+          
             user_acc1.Visible = false;
+            userFormProgress1.Visible = false;
+            userFormMyCourses1.Visible = false;
+            animationLeaf.ShowSync(panel9);
+            CoursesLayoutPanel.Visible = true;
+            animationHoriz.ShowSync(userFormHome1);
         }
 
         private void panel9_Paint(object sender, PaintEventArgs e)
@@ -67,6 +72,7 @@ namespace upcourse
 
         }
 
+        
         private void button3_Click(object sender, EventArgs e)
         {
             animationLeaf.ShowSync(panel9);
@@ -80,26 +86,14 @@ namespace upcourse
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(30)))), ((int)(((byte)(20)))));
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            animationLeaf.HideSync(panel9);
-            animationHoriz.HideSync(user_acc1);
-
-            animationHoriz.ShowSync(userFormHome1);
-
-
-
-            //----------------------------------------------colors----------------------------------------------------------------------------
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(179)))), ((int)(((byte)(70)))));
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(30)))), ((int)(((byte)(20)))));
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(30)))), ((int)(((byte)(20)))));
-
-        }
-
+      
+//account done
         private void button2_Click(object sender, EventArgs e)
         {
-            animationHoriz.HideSync(userFormHome1);
-
+            userFormHome1.Visible = false;
+            CoursesLayoutPanel.Visible = false;
+            userFormProgress1.Visible = false;
+            userFormMyCourses1.Visible = false;
             animationLeaf.HideSync(panel9);
             animationHoriz.ShowSync(user_acc1);
 
@@ -132,13 +126,26 @@ namespace upcourse
 
         }
 
+        //my courses
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
-
+            user_acc1.Visible = false;
+            CoursesLayoutPanel.Visible = false;
+            userFormHome1.Visible = false;
+            userFormProgress1.Visible = false;
+            animationLeaf.ShowSync(panel9);
+            animationHoriz.ShowSync(userFormMyCourses1);
         }
 
+        //progress
         private void bunifuFlatButton2_Click(object sender, EventArgs e)
         {
+            user_acc1.Visible = false;
+            CoursesLayoutPanel.Visible = false;
+            userFormHome1.Visible = false;
+            userFormMyCourses1.Visible = false;
+            animationLeaf.ShowSync(panel9);
+            animationHoriz.ShowSync(userFormProgress1);
 
         }
 
@@ -182,6 +189,16 @@ namespace upcourse
         }
 
         private void CoursesLayoutPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel6_Paint(object sender, PaintEventArgs e)
         {
 
         }

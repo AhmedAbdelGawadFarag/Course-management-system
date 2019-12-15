@@ -233,6 +233,18 @@
     <Compile Include="UserFormHome.Designer.cs">
       <DependentUpon>UserFormHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="userFormMyCourses.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userFormMyCourses.Designer.cs">
+      <DependentUpon>userFormMyCourses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userFormProgress.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userFormProgress.Designer.cs">
+      <DependentUpon>userFormProgress.cs</DependentUpon>
+    </Compile>
     <Compile Include="user_acc.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -335,6 +347,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserFormHome.resx">
       <DependentUpon>UserFormHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userFormMyCourses.resx">
+      <DependentUpon>userFormMyCourses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userFormProgress.resx">
+      <DependentUpon>userFormProgress.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="user_acc.resx">
       <DependentUpon>user_acc.cs</DependentUpon>
