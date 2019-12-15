@@ -120,3 +120,4 @@ F:\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.userFormProgres
 C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.adminCourseAssign.resources
 C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.userFormMyCourses.resources
 C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.userFormProgress.resources
+C:\Users\Beeka\Desktop\projects\Course-management-system\upcourse\upcourse\obj\Debug\upcourse.CoursesPanelWithProgress.resources

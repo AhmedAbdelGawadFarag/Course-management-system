@@ -168,11 +168,13 @@ namespace upcourse
 
         private void getCoursesDB()
         {
-            SqlCommand Courses = new SqlCommand("select * from course", Program.dbconnection);
-          SqlDataReader data= Courses.ExecuteReader();
+            SqlCommand Courses = new SqlCommand("getNotJoinedCourses", Program.dbconnection);
+            Courses.CommandType = CommandType.StoredProcedure;
+            Courses.Parameters.AddWithValue("@traineeId",mainscreen.GetUserID());
+             SqlDataReader data= Courses.ExecuteReader();
             while (data.Read())
             {
-                CoursePanel pnl = new CoursePanel(data.GetInt32(0), data.GetString(3), data.GetString(5));
+                CoursePanel pnl = new CoursePanel(data.GetInt32(0), data.GetString(3), data.GetString(5),data.GetDateTime(1),data.GetDateTime(2));
                 this.CoursesLayoutPanel.Controls.Add(pnl);
             }
             data.Close();

@@ -102,6 +102,12 @@
     <Compile Include="CoursePanel.Designer.cs">
       <DependentUpon>CoursePanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="CoursesPanelWithProgress.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CoursesPanelWithProgress.Designer.cs">
+      <DependentUpon>CoursesPanelWithProgress.cs</DependentUpon>
+    </Compile>
     <Compile Include="CTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -274,6 +280,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CoursePanel.resx">
       <DependentUpon>CoursePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoursesPanelWithProgress.resx">
+      <DependentUpon>CoursesPanelWithProgress.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
